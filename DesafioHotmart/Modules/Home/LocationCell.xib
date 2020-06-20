@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LocationCell" customModule="DesafioHotmart" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="202" height="291"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="202" height="291"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y4q-TI-y7p">
+                        <rect key="frame" x="0.0" y="0.0" width="202" height="128"/>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="128" id="tj4-g3-eDP"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Café Escritório" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJl-Vb-CmV">
+                        <rect key="frame" x="8" y="136" width="186" height="19.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coworking" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZi-pP-ULf">
+                        <rect key="frame" x="8" y="155.5" width="186" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iuc-3n-ShL" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="8" y="188.5" width="186" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="xEH-Kh-6Gk"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="text" value="3.5"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="StarOnSmall"/>
+                            <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="StarOffSmall"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textMargin">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                <color key="value" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMd-Xh-yYA">
+                        <rect key="frame" x="0.0" y="290" width="202" height="1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="YCB-72-8Fe"/>
+                            <constraint firstAttribute="width" priority="750" constant="240" id="blO-gv-7SK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Iuc-3n-ShL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="1BG-N3-B2B"/>
+                <constraint firstAttribute="trailing" secondItem="PJl-Vb-CmV" secondAttribute="trailing" constant="8" id="8yz-8O-qlZ"/>
+                <constraint firstItem="fMd-Xh-yYA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ABn-Kf-i2E"/>
+                <constraint firstAttribute="trailing" secondItem="y4q-TI-y7p" secondAttribute="trailing" id="AOu-eK-hCB"/>
+                <constraint firstItem="y4q-TI-y7p" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="HDk-z5-l6f"/>
+                <constraint firstAttribute="trailing" secondItem="Iuc-3n-ShL" secondAttribute="trailing" constant="8" id="P7Z-7H-u8k"/>
+                <constraint firstItem="PJl-Vb-CmV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="UoB-YV-nAq"/>
+                <constraint firstItem="Iuc-3n-ShL" firstAttribute="top" secondItem="EZi-pP-ULf" secondAttribute="bottom" constant="16" id="hLZ-QX-qBr"/>
+                <constraint firstAttribute="trailing" secondItem="EZi-pP-ULf" secondAttribute="trailing" constant="8" id="n1W-um-Q0a"/>
+                <constraint firstItem="EZi-pP-ULf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="o23-h3-dvx"/>
+                <constraint firstItem="y4q-TI-y7p" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oTH-tF-g06"/>
+                <constraint firstAttribute="bottom" secondItem="fMd-Xh-yYA" secondAttribute="bottom" id="sk2-sC-Gge"/>
+                <constraint firstItem="EZi-pP-ULf" firstAttribute="top" secondItem="PJl-Vb-CmV" secondAttribute="bottom" id="vBE-k4-rNu"/>
+                <constraint firstAttribute="trailing" secondItem="fMd-Xh-yYA" secondAttribute="trailing" id="va8-4a-ZG0"/>
+                <constraint firstItem="PJl-Vb-CmV" firstAttribute="top" secondItem="y4q-TI-y7p" secondAttribute="bottom" constant="8" id="xmg-mm-rNN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="202" height="291"/>
+            <connections>
+                <outlet property="cellWidthConstraint" destination="blO-gv-7SK" id="Gtb-Ye-ua4"/>
+                <outlet property="containerView" destination="y4q-TI-y7p" id="OdJ-Qe-agj"/>
+                <outlet property="contraintHeigit" destination="tj4-g3-eDP" id="PD4-x4-Wz7"/>
+                <outlet property="cosmosView" destination="Iuc-3n-ShL" id="QDW-H6-XuY"/>
+                <outlet property="subTitleLabel" destination="EZi-pP-ULf" id="BZt-PB-wzU"/>
+                <outlet property="titleLabel" destination="PJl-Vb-CmV" id="zFf-eb-aLn"/>
+            </connections>
+            <point key="canvasLocation" x="247.82608695652175" y="211.27232142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="StarOffSmall" width="11" height="10"/>
+        <image name="StarOnSmall" width="11" height="10"/>
+    </resources>
+</document>

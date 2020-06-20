@@ -3,18 +3,52 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BBE47AC07F0BA93A92BD81F /* Pods_DesafioHotmart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C214D39015ADA57600962E6 /* Pods_DesafioHotmart.framework */; };
+		4340AFB4B2776023DE374B9F /* Pods_DesafioHotmartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3661D33914B99877E5DC3BC /* Pods_DesafioHotmartTests.framework */; };
+		D51761B46B3AE2DFD56AB823 /* Pods_DesafioHotmart_DesafioHotmartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0223B88BEB06469072D28170 /* Pods_DesafioHotmart_DesafioHotmartUITests.framework */; };
 		F386EFF7249C261E00D4FE49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386EFF6249C261E00D4FE49 /* AppDelegate.swift */; };
 		F386EFF9249C261E00D4FE49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386EFF8249C261E00D4FE49 /* SceneDelegate.swift */; };
-		F386EFFB249C261E00D4FE49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386EFFA249C261E00D4FE49 /* ViewController.swift */; };
+		F386EFFB249C261E00D4FE49 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386EFFA249C261E00D4FE49 /* HomeListView.swift */; };
 		F386EFFE249C261F00D4FE49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F386EFFC249C261F00D4FE49 /* Main.storyboard */; };
 		F386F000249C262400D4FE49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F386EFFF249C262400D4FE49 /* Assets.xcassets */; };
 		F386F003249C262400D4FE49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F386F001249C262400D4FE49 /* LaunchScreen.storyboard */; };
 		F386F00E249C262400D4FE49 /* DesafioHotmartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386F00D249C262400D4FE49 /* DesafioHotmartTests.swift */; };
 		F386F019249C262400D4FE49 /* DesafioHotmartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386F018249C262400D4FE49 /* DesafioHotmartUITests.swift */; };
+		F3A5D7A4249D044A0044D6F1 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5D7A3249D044A0044D6F1 /* PinterestLayout.swift */; };
+		F3A5D7AE249D2E340044D6F1 /* CollectionViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3A5D7A6249D2E340044D6F1 /* CollectionViewHeader.xib */; };
+		F3A5D7AF249D2E340044D6F1 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5D7A7249D2E340044D6F1 /* CollectionViewController.swift */; };
+		F3A5D7B0249D2E340044D6F1 /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5D7A8249D2E340044D6F1 /* Sections.swift */; };
+		F3A5D7B1249D2E340044D6F1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5D7A9249D2E340044D6F1 /* CollectionViewCell.swift */; };
+		F3A5D7B2249D2E340044D6F1 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3A5D7AA249D2E340044D6F1 /* CollectionViewCell.xib */; };
+		F3A5D7B3249D2E340044D6F1 /* CollectionViewFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5D7AB249D2E340044D6F1 /* CollectionViewFooter.swift */; };
+		F3A5D7B4249D2E340044D6F1 /* CollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5D7AC249D2E340044D6F1 /* CollectionViewHeader.swift */; };
+		F3A5D7B5249D2E340044D6F1 /* CollectionViewFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3A5D7AD249D2E340044D6F1 /* CollectionViewFooter.xib */; };
+		F3A5D7B8249D2E8E0044D6F1 /* ReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5D7B7249D2E8E0044D6F1 /* ReusableIdentifier.swift */; };
+		F3A5D7BD249D2FAF0044D6F1 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5D7BB249D2FAF0044D6F1 /* LocationCell.swift */; };
+		F3A5D7BE249D2FAF0044D6F1 /* LocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3A5D7BC249D2FAF0044D6F1 /* LocationCell.xib */; };
+		F3A5D7C2249D6C010044D6F1 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5D7C1249D6C010044D6F1 /* Extension.swift */; };
+		F3A5D7C4249D71420044D6F1 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5D7C3249D71420044D6F1 /* LocationItem.swift */; };
+		F3A5D7C7249D735D0044D6F1 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5D7C6249D735D0044D6F1 /* LocationModel.swift */; };
+		F3A5D7CB249D74A30044D6F1 /* ColorsPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5D7CA249D74A30044D6F1 /* ColorsPrimary.swift */; };
+		F3A5D7CD249D7CFB0044D6F1 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5D7CC249D7CFB0044D6F1 /* HomePresenter.swift */; };
+		F3A5D7D0249D7D430044D6F1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5D7CF249D7D430044D6F1 /* LocationManager.swift */; };
+		F3A5D7D2249D80680044D6F1 /* LocationsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5D7D1249D80680044D6F1 /* LocationsRoute.swift */; };
+		F3A5D7D4249D856C0044D6F1 /* HomeRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5D7D3249D856C0044D6F1 /* HomeRoute.swift */; };
+		F3A5D7E0249D8F290044D6F1 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3A5D7D6249D8F280044D6F1 /* OpenSans-LightItalic.ttf */; };
+		F3A5D7E1249D8F290044D6F1 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3A5D7D7249D8F280044D6F1 /* OpenSans-ExtraBold.ttf */; };
+		F3A5D7E2249D8F290044D6F1 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3A5D7D8249D8F280044D6F1 /* OpenSans-Regular.ttf */; };
+		F3A5D7E3249D8F290044D6F1 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3A5D7D9249D8F280044D6F1 /* OpenSans-ExtraBoldItalic.ttf */; };
+		F3A5D7E4249D8F290044D6F1 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3A5D7DA249D8F280044D6F1 /* OpenSans-BoldItalic.ttf */; };
+		F3A5D7E5249D8F290044D6F1 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3A5D7DB249D8F290044D6F1 /* OpenSans-Bold.ttf */; };
+		F3A5D7E6249D8F290044D6F1 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3A5D7DC249D8F290044D6F1 /* OpenSans-Light.ttf */; };
+		F3A5D7E7249D8F290044D6F1 /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3A5D7DD249D8F290044D6F1 /* OpenSans-SemiBoldItalic.ttf */; };
+		F3A5D7E8249D8F290044D6F1 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3A5D7DE249D8F290044D6F1 /* OpenSans-Italic.ttf */; };
+		F3A5D7E9249D8F290044D6F1 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3A5D7DF249D8F290044D6F1 /* OpenSans-SemiBold.ttf */; };
+		F3A5D7EB249D8F370044D6F1 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5D7EA249D8F370044D6F1 /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +69,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0223B88BEB06469072D28170 /* Pods_DesafioHotmart_DesafioHotmartUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioHotmart_DesafioHotmartUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03A4777141861ABA22FA06A0 /* Pods-DesafioHotmartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmartTests.debug.xcconfig"; path = "Target Support Files/Pods-DesafioHotmartTests/Pods-DesafioHotmartTests.debug.xcconfig"; sourceTree = "<group>"; };
+		59260E7356A37021DDF8E686 /* Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig"; path = "Target Support Files/Pods-DesafioHotmart-DesafioHotmartUITests/Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6592BD65DBA9D8C5829EEBE4 /* Pods-DesafioHotmart-DesafioHotmartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmart-DesafioHotmartUITests.release.xcconfig"; path = "Target Support Files/Pods-DesafioHotmart-DesafioHotmartUITests/Pods-DesafioHotmart-DesafioHotmartUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6F7AAB388BB9276E0E630CA0 /* Pods-DesafioHotmart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmart.debug.xcconfig"; path = "Target Support Files/Pods-DesafioHotmart/Pods-DesafioHotmart.debug.xcconfig"; sourceTree = "<group>"; };
+		9C214D39015ADA57600962E6 /* Pods_DesafioHotmart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioHotmart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A908CB05190BF81F142579C8 /* Pods-DesafioHotmart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmart.release.xcconfig"; path = "Target Support Files/Pods-DesafioHotmart/Pods-DesafioHotmart.release.xcconfig"; sourceTree = "<group>"; };
+		CBD9011C4EBE36141EC46597 /* Pods-DesafioHotmartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmartTests.release.xcconfig"; path = "Target Support Files/Pods-DesafioHotmartTests/Pods-DesafioHotmartTests.release.xcconfig"; sourceTree = "<group>"; };
+		D3661D33914B99877E5DC3BC /* Pods_DesafioHotmartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioHotmartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F386EFF3249C261E00D4FE49 /* DesafioHotmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioHotmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F386EFF6249C261E00D4FE49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F386EFF8249C261E00D4FE49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F386EFFA249C261E00D4FE49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F386EFFA249C261E00D4FE49 /* HomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
 		F386EFFD249C261F00D4FE49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F386EFFF249C262400D4FE49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F386F002249C262400D4FE49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +92,37 @@
 		F386F014249C262400D4FE49 /* DesafioHotmartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioHotmartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F386F018249C262400D4FE49 /* DesafioHotmartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioHotmartUITests.swift; sourceTree = "<group>"; };
 		F386F01A249C262400D4FE49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3A5D7A3249D044A0044D6F1 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		F3A5D7A6249D2E340044D6F1 /* CollectionViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewHeader.xib; sourceTree = "<group>"; };
+		F3A5D7A7249D2E340044D6F1 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		F3A5D7A8249D2E340044D6F1 /* Sections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
+		F3A5D7A9249D2E340044D6F1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		F3A5D7AA249D2E340044D6F1 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		F3A5D7AB249D2E340044D6F1 /* CollectionViewFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewFooter.swift; sourceTree = "<group>"; };
+		F3A5D7AC249D2E340044D6F1 /* CollectionViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewHeader.swift; sourceTree = "<group>"; };
+		F3A5D7AD249D2E340044D6F1 /* CollectionViewFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewFooter.xib; sourceTree = "<group>"; };
+		F3A5D7B7249D2E8E0044D6F1 /* ReusableIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableIdentifier.swift; sourceTree = "<group>"; };
+		F3A5D7BB249D2FAF0044D6F1 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		F3A5D7BC249D2FAF0044D6F1 /* LocationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationCell.xib; sourceTree = "<group>"; };
+		F3A5D7C1249D6C010044D6F1 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		F3A5D7C3249D71420044D6F1 /* LocationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
+		F3A5D7C6249D735D0044D6F1 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		F3A5D7CA249D74A30044D6F1 /* ColorsPrimary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsPrimary.swift; sourceTree = "<group>"; };
+		F3A5D7CC249D7CFB0044D6F1 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		F3A5D7CF249D7D430044D6F1 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		F3A5D7D1249D80680044D6F1 /* LocationsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsRoute.swift; sourceTree = "<group>"; };
+		F3A5D7D3249D856C0044D6F1 /* HomeRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRoute.swift; sourceTree = "<group>"; };
+		F3A5D7D6249D8F280044D6F1 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		F3A5D7D7249D8F280044D6F1 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F3A5D7D8249D8F280044D6F1 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		F3A5D7D9249D8F280044D6F1 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		F3A5D7DA249D8F280044D6F1 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F3A5D7DB249D8F290044D6F1 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		F3A5D7DC249D8F290044D6F1 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		F3A5D7DD249D8F290044D6F1 /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		F3A5D7DE249D8F290044D6F1 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		F3A5D7DF249D8F290044D6F1 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		F3A5D7EA249D8F370044D6F1 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BBE47AC07F0BA93A92BD81F /* Pods_DesafioHotmart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4340AFB4B2776023DE374B9F /* Pods_DesafioHotmartTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +146,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D51761B46B3AE2DFD56AB823 /* Pods_DesafioHotmart_DesafioHotmartUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		370003E7F63D9DD337D801FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C214D39015ADA57600962E6 /* Pods_DesafioHotmart.framework */,
+				0223B88BEB06469072D28170 /* Pods_DesafioHotmart_DesafioHotmartUITests.framework */,
+				D3661D33914B99877E5DC3BC /* Pods_DesafioHotmartTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		430268612742D4C46CAF8A50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F7AAB388BB9276E0E630CA0 /* Pods-DesafioHotmart.debug.xcconfig */,
+				A908CB05190BF81F142579C8 /* Pods-DesafioHotmart.release.xcconfig */,
+				59260E7356A37021DDF8E686 /* Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig */,
+				6592BD65DBA9D8C5829EEBE4 /* Pods-DesafioHotmart-DesafioHotmartUITests.release.xcconfig */,
+				03A4777141861ABA22FA06A0 /* Pods-DesafioHotmartTests.debug.xcconfig */,
+				CBD9011C4EBE36141EC46597 /* Pods-DesafioHotmartTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F386EFEA249C261E00D4FE49 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +183,8 @@
 				F386F00C249C262400D4FE49 /* DesafioHotmartTests */,
 				F386F017249C262400D4FE49 /* DesafioHotmartUITests */,
 				F386EFF4249C261E00D4FE49 /* Products */,
+				430268612742D4C46CAF8A50 /* Pods */,
+				370003E7F63D9DD337D801FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +201,19 @@
 		F386EFF5249C261E00D4FE49 /* DesafioHotmart */ = {
 			isa = PBXGroup;
 			children = (
+				F3A5D7CE249D7D2C0044D6F1 /* Manager */,
+				F3A5D7C8249D746F0044D6F1 /* Style Guide */,
+				F3A5D7C5249D73180044D6F1 /* Model */,
+				F3A5D7B9249D2F840044D6F1 /* Modules */,
+				F3A5D7B6249D2E780044D6F1 /* Helpers */,
+				F3A5D7A5249D2DF10044D6F1 /* CollectionView */,
 				F386EFF6249C261E00D4FE49 /* AppDelegate.swift */,
 				F386EFF8249C261E00D4FE49 /* SceneDelegate.swift */,
-				F386EFFA249C261E00D4FE49 /* ViewController.swift */,
 				F386EFFC249C261F00D4FE49 /* Main.storyboard */,
 				F386EFFF249C262400D4FE49 /* Assets.xcassets */,
 				F386F001249C262400D4FE49 /* LaunchScreen.storyboard */,
 				F386F004249C262400D4FE49 /* Info.plist */,
+				F3A5D7A3249D044A0044D6F1 /* PinterestLayout.swift */,
 			);
 			path = DesafioHotmart;
 			sourceTree = "<group>";
@@ -128,6 +236,103 @@
 			path = DesafioHotmartUITests;
 			sourceTree = "<group>";
 		};
+		F3A5D7A5249D2DF10044D6F1 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F3A5D7A9249D2E340044D6F1 /* CollectionViewCell.swift */,
+				F3A5D7AA249D2E340044D6F1 /* CollectionViewCell.xib */,
+				F3A5D7A7249D2E340044D6F1 /* CollectionViewController.swift */,
+				F3A5D7AB249D2E340044D6F1 /* CollectionViewFooter.swift */,
+				F3A5D7AD249D2E340044D6F1 /* CollectionViewFooter.xib */,
+				F3A5D7AC249D2E340044D6F1 /* CollectionViewHeader.swift */,
+				F3A5D7A6249D2E340044D6F1 /* CollectionViewHeader.xib */,
+				F3A5D7A8249D2E340044D6F1 /* Sections.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		F3A5D7B6249D2E780044D6F1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F3A5D7B7249D2E8E0044D6F1 /* ReusableIdentifier.swift */,
+				F3A5D7C1249D6C010044D6F1 /* Extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F3A5D7B9249D2F840044D6F1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F3A5D7BA249D2F8E0044D6F1 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F3A5D7BA249D2F8E0044D6F1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F386EFFA249C261E00D4FE49 /* HomeListView.swift */,
+				F3A5D7BB249D2FAF0044D6F1 /* LocationCell.swift */,
+				F3A5D7BC249D2FAF0044D6F1 /* LocationCell.xib */,
+				F3A5D7C3249D71420044D6F1 /* LocationItem.swift */,
+				F3A5D7CC249D7CFB0044D6F1 /* HomePresenter.swift */,
+				F3A5D7D3249D856C0044D6F1 /* HomeRoute.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F3A5D7C5249D73180044D6F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3A5D7C6249D735D0044D6F1 /* LocationModel.swift */,
+				F3A5D7D1249D80680044D6F1 /* LocationsRoute.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F3A5D7C8249D746F0044D6F1 /* Style Guide */ = {
+			isa = PBXGroup;
+			children = (
+				F3A5D7D5249D8F0C0044D6F1 /* Fonts */,
+				F3A5D7C9249D74760044D6F1 /* color */,
+			);
+			path = "Style Guide";
+			sourceTree = "<group>";
+		};
+		F3A5D7C9249D74760044D6F1 /* color */ = {
+			isa = PBXGroup;
+			children = (
+				F3A5D7CA249D74A30044D6F1 /* ColorsPrimary.swift */,
+			);
+			path = color;
+			sourceTree = "<group>";
+		};
+		F3A5D7CE249D7D2C0044D6F1 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F3A5D7CF249D7D430044D6F1 /* LocationManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		F3A5D7D5249D8F0C0044D6F1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F3A5D7DB249D8F290044D6F1 /* OpenSans-Bold.ttf */,
+				F3A5D7DA249D8F280044D6F1 /* OpenSans-BoldItalic.ttf */,
+				F3A5D7D7249D8F280044D6F1 /* OpenSans-ExtraBold.ttf */,
+				F3A5D7D9249D8F280044D6F1 /* OpenSans-ExtraBoldItalic.ttf */,
+				F3A5D7DE249D8F290044D6F1 /* OpenSans-Italic.ttf */,
+				F3A5D7DC249D8F290044D6F1 /* OpenSans-Light.ttf */,
+				F3A5D7D6249D8F280044D6F1 /* OpenSans-LightItalic.ttf */,
+				F3A5D7D8249D8F280044D6F1 /* OpenSans-Regular.ttf */,
+				F3A5D7DF249D8F290044D6F1 /* OpenSans-SemiBold.ttf */,
+				F3A5D7DD249D8F290044D6F1 /* OpenSans-SemiBoldItalic.ttf */,
+				F3A5D7EA249D8F370044D6F1 /* Fonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +340,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F386F01D249C262400D4FE49 /* Build configuration list for PBXNativeTarget "DesafioHotmart" */;
 			buildPhases = (
+				5371572FCCA74FA3E8A23686 /* [CP] Check Pods Manifest.lock */,
 				F386EFEF249C261E00D4FE49 /* Sources */,
 				F386EFF0249C261E00D4FE49 /* Frameworks */,
 				F386EFF1249C261E00D4FE49 /* Resources */,
+				0D8ED1FD9D5A2FB99A36694A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +359,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F386F020249C262400D4FE49 /* Build configuration list for PBXNativeTarget "DesafioHotmartTests" */;
 			buildPhases = (
+				6526551D7AB314ED6DEB0C49 /* [CP] Check Pods Manifest.lock */,
 				F386F005249C262400D4FE49 /* Sources */,
 				F386F006249C262400D4FE49 /* Frameworks */,
 				F386F007249C262400D4FE49 /* Resources */,
@@ -170,9 +378,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F386F023249C262400D4FE49 /* Build configuration list for PBXNativeTarget "DesafioHotmartUITests" */;
 			buildPhases = (
+				345D2736429C686495578A4A /* [CP] Check Pods Manifest.lock */,
 				F386F010249C262400D4FE49 /* Sources */,
 				F386F011249C262400D4FE49 /* Frameworks */,
 				F386F012249C262400D4FE49 /* Resources */,
+				6580D477F49F3602571D8F56 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,9 +442,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A5D7E9249D8F290044D6F1 /* OpenSans-SemiBold.ttf in Resources */,
+				F3A5D7E2249D8F290044D6F1 /* OpenSans-Regular.ttf in Resources */,
+				F3A5D7BE249D2FAF0044D6F1 /* LocationCell.xib in Resources */,
+				F3A5D7E6249D8F290044D6F1 /* OpenSans-Light.ttf in Resources */,
 				F386F003249C262400D4FE49 /* LaunchScreen.storyboard in Resources */,
+				F3A5D7E1249D8F290044D6F1 /* OpenSans-ExtraBold.ttf in Resources */,
+				F3A5D7B5249D2E340044D6F1 /* CollectionViewFooter.xib in Resources */,
+				F3A5D7AE249D2E340044D6F1 /* CollectionViewHeader.xib in Resources */,
+				F3A5D7E4249D8F290044D6F1 /* OpenSans-BoldItalic.ttf in Resources */,
 				F386F000249C262400D4FE49 /* Assets.xcassets in Resources */,
+				F3A5D7E8249D8F290044D6F1 /* OpenSans-Italic.ttf in Resources */,
+				F3A5D7E7249D8F290044D6F1 /* OpenSans-SemiBoldItalic.ttf in Resources */,
 				F386EFFE249C261F00D4FE49 /* Main.storyboard in Resources */,
+				F3A5D7E0249D8F290044D6F1 /* OpenSans-LightItalic.ttf in Resources */,
+				F3A5D7E5249D8F290044D6F1 /* OpenSans-Bold.ttf in Resources */,
+				F3A5D7E3249D8F290044D6F1 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				F3A5D7B2249D2E340044D6F1 /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +478,134 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D8ED1FD9D5A2FB99A36694A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioHotmart/Pods-DesafioHotmart-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioHotmart/Pods-DesafioHotmart-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesafioHotmart/Pods-DesafioHotmart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		345D2736429C686495578A4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesafioHotmart-DesafioHotmartUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5371572FCCA74FA3E8A23686 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesafioHotmart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6526551D7AB314ED6DEB0C49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesafioHotmartTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6580D477F49F3602571D8F56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioHotmart-DesafioHotmartUITests/Pods-DesafioHotmart-DesafioHotmartUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioHotmart-DesafioHotmartUITests/Pods-DesafioHotmart-DesafioHotmartUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesafioHotmart-DesafioHotmartUITests/Pods-DesafioHotmart-DesafioHotmartUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F386EFEF249C261E00D4FE49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F386EFFB249C261E00D4FE49 /* ViewController.swift in Sources */,
+				F3A5D7A4249D044A0044D6F1 /* PinterestLayout.swift in Sources */,
+				F3A5D7B4249D2E340044D6F1 /* CollectionViewHeader.swift in Sources */,
+				F3A5D7B0249D2E340044D6F1 /* Sections.swift in Sources */,
+				F3A5D7BD249D2FAF0044D6F1 /* LocationCell.swift in Sources */,
+				F3A5D7CB249D74A30044D6F1 /* ColorsPrimary.swift in Sources */,
+				F386EFFB249C261E00D4FE49 /* HomeListView.swift in Sources */,
+				F3A5D7B3249D2E340044D6F1 /* CollectionViewFooter.swift in Sources */,
+				F3A5D7EB249D8F370044D6F1 /* Fonts.swift in Sources */,
+				F3A5D7B1249D2E340044D6F1 /* CollectionViewCell.swift in Sources */,
+				F3A5D7D0249D7D430044D6F1 /* LocationManager.swift in Sources */,
 				F386EFF7249C261E00D4FE49 /* AppDelegate.swift in Sources */,
+				F3A5D7D4249D856C0044D6F1 /* HomeRoute.swift in Sources */,
 				F386EFF9249C261E00D4FE49 /* SceneDelegate.swift in Sources */,
+				F3A5D7C2249D6C010044D6F1 /* Extension.swift in Sources */,
+				F3A5D7CD249D7CFB0044D6F1 /* HomePresenter.swift in Sources */,
+				F3A5D7AF249D2E340044D6F1 /* CollectionViewController.swift in Sources */,
+				F3A5D7D2249D80680044D6F1 /* LocationsRoute.swift in Sources */,
+				F3A5D7B8249D2E8E0044D6F1 /* ReusableIdentifier.swift in Sources */,
+				F3A5D7C7249D735D0044D6F1 /* LocationModel.swift in Sources */,
+				F3A5D7C4249D71420044D6F1 /* LocationItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +776,7 @@
 		};
 		F386F01E249C262400D4FE49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F7AAB388BB9276E0E630CA0 /* Pods-DesafioHotmart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +796,7 @@
 		};
 		F386F01F249C262400D4FE49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A908CB05190BF81F142579C8 /* Pods-DesafioHotmart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +816,7 @@
 		};
 		F386F021249C262400D4FE49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03A4777141861ABA22FA06A0 /* Pods-DesafioHotmartTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -492,6 +839,7 @@
 		};
 		F386F022249C262400D4FE49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBD9011C4EBE36141EC46597 /* Pods-DesafioHotmartTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -514,6 +862,7 @@
 		};
 		F386F024249C262400D4FE49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59260E7356A37021DDF8E686 /* Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +883,7 @@
 		};
 		F386F025249C262400D4FE49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6592BD65DBA9D8C5829EEBE4 /* Pods-DesafioHotmart-DesafioHotmartUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
