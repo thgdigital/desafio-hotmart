@@ -17,6 +17,17 @@ struct Locations: Codable {
 struct LocationModel: Codable {
     let name: String
     let review: Double
-    let type: String
+    let type: LocationType
     let id: Int
+}
+enum LocationType: String, Codable {
+    case coworking = "Coworking"
+    case restaurante = "Restaurante"
+    case padaria = "Padaria"
+    case sucosNaturais = "Sucos Naturais"
+    case cafeteria = "Cafeteria"
+    case produtosNaturais = "Produtos naturais"
+    case barbearia = "Barbearia"
+    case supermercado = "Supermercado"
+    case bares = "Bares"
 }

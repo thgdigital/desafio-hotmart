@@ -93,7 +93,7 @@ struct MainPreview: PreviewProvider {
     
     struct ContainerView: UIViewControllerRepresentable {
         func makeUIViewController(context: Context) -> UIViewController {
-            HomeListView(collectionViewLayout: UICollectionViewFlowLayout())
+            UINavigationController(rootViewController: HomeRoute().makeScreen())
         }
         
         func updateUIViewController(_ uiViewController: UIViewController, context: Context) {

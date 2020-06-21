@@ -8,7 +8,7 @@
 
 import UIKit
 import Cosmos
-import OpenSans
+import SDWebImage
 
 class LocationCell: CollectionViewCell {
     @IBOutlet weak var contraintHeigit: NSLayoutConstraint!
@@ -16,6 +16,7 @@ class LocationCell: CollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subTitleLabel: UILabel!
     @IBOutlet weak var cosmosView: CosmosView!
+    @IBOutlet weak var locationImageView: UIImageView!
     
     
     override func awakeFromNib() {
@@ -33,5 +34,10 @@ class LocationCell: CollectionViewCell {
         containerView.backgroundColor = item.color
         cosmosView.rating = item.rewies
         cosmosView.text = "\(item.rewies)"
+        locationImageView.sd_setImage(with: URL(string: item.image)) { (image, error, cache, url) in
+            if error != nil {
+                self.containerView.backgroundColor = .clear
+            }
+        }
     }
 }

@@ -19,8 +19,17 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y4q-TI-y7p">
                         <rect key="frame" x="0.0" y="0.0" width="202" height="128"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IHV-cC-oXI">
+                                <rect key="frame" x="0.0" y="0.0" width="202" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="IHV-cC-oXI" firstAttribute="top" secondItem="y4q-TI-y7p" secondAttribute="top" id="5Ft-Yl-dal"/>
+                            <constraint firstAttribute="trailing" secondItem="IHV-cC-oXI" secondAttribute="trailing" id="HRj-Xi-TX5"/>
+                            <constraint firstAttribute="bottom" secondItem="IHV-cC-oXI" secondAttribute="bottom" id="OmZ-69-7yF"/>
+                            <constraint firstItem="IHV-cC-oXI" firstAttribute="leading" secondItem="y4q-TI-y7p" secondAttribute="leading" id="l6d-86-0cf"/>
                             <constraint firstAttribute="height" constant="128" id="tj4-g3-eDP"/>
                         </constraints>
                     </view>
@@ -103,6 +112,7 @@
                 <outlet property="containerView" destination="y4q-TI-y7p" id="OdJ-Qe-agj"/>
                 <outlet property="contraintHeigit" destination="tj4-g3-eDP" id="PD4-x4-Wz7"/>
                 <outlet property="cosmosView" destination="Iuc-3n-ShL" id="QDW-H6-XuY"/>
+                <outlet property="locationImageView" destination="IHV-cC-oXI" id="XfL-F3-JQJ"/>
                 <outlet property="subTitleLabel" destination="EZi-pP-ULf" id="BZt-PB-wzU"/>
                 <outlet property="titleLabel" destination="PJl-Vb-CmV" id="zFf-eb-aLn"/>
             </connections>

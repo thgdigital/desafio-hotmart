@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BBE47AC07F0BA93A92BD81F /* Pods_DesafioHotmart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C214D39015ADA57600962E6 /* Pods_DesafioHotmart.framework */; };
-		4340AFB4B2776023DE374B9F /* Pods_DesafioHotmartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3661D33914B99877E5DC3BC /* Pods_DesafioHotmartTests.framework */; };
-		D51761B46B3AE2DFD56AB823 /* Pods_DesafioHotmart_DesafioHotmartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0223B88BEB06469072D28170 /* Pods_DesafioHotmart_DesafioHotmartUITests.framework */; };
+		3F1F8EAF97EE397C9CAB91F7 /* Pods_DesafioHotmart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09859F59BC795FC86198566F /* Pods_DesafioHotmart.framework */; };
+		636E66580664E65DA87D9D7F /* Pods_DesafioHotmart_DesafioHotmartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597B6A3B1A4EBA81D46ACF3A /* Pods_DesafioHotmart_DesafioHotmartUITests.framework */; };
+		B3B8541CC31501BB32FFF861 /* Pods_DesafioHotmartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0AEB65DCAABBB7C597E8653 /* Pods_DesafioHotmartTests.framework */; };
 		F386EFF7249C261E00D4FE49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386EFF6249C261E00D4FE49 /* AppDelegate.swift */; };
 		F386EFF9249C261E00D4FE49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386EFF8249C261E00D4FE49 /* SceneDelegate.swift */; };
 		F386EFFB249C261E00D4FE49 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386EFFA249C261E00D4FE49 /* HomeListView.swift */; };
@@ -69,15 +69,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0223B88BEB06469072D28170 /* Pods_DesafioHotmart_DesafioHotmartUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioHotmart_DesafioHotmartUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		03A4777141861ABA22FA06A0 /* Pods-DesafioHotmartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmartTests.debug.xcconfig"; path = "Target Support Files/Pods-DesafioHotmartTests/Pods-DesafioHotmartTests.debug.xcconfig"; sourceTree = "<group>"; };
-		59260E7356A37021DDF8E686 /* Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig"; path = "Target Support Files/Pods-DesafioHotmart-DesafioHotmartUITests/Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		6592BD65DBA9D8C5829EEBE4 /* Pods-DesafioHotmart-DesafioHotmartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmart-DesafioHotmartUITests.release.xcconfig"; path = "Target Support Files/Pods-DesafioHotmart-DesafioHotmartUITests/Pods-DesafioHotmart-DesafioHotmartUITests.release.xcconfig"; sourceTree = "<group>"; };
-		6F7AAB388BB9276E0E630CA0 /* Pods-DesafioHotmart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmart.debug.xcconfig"; path = "Target Support Files/Pods-DesafioHotmart/Pods-DesafioHotmart.debug.xcconfig"; sourceTree = "<group>"; };
-		9C214D39015ADA57600962E6 /* Pods_DesafioHotmart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioHotmart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A908CB05190BF81F142579C8 /* Pods-DesafioHotmart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmart.release.xcconfig"; path = "Target Support Files/Pods-DesafioHotmart/Pods-DesafioHotmart.release.xcconfig"; sourceTree = "<group>"; };
-		CBD9011C4EBE36141EC46597 /* Pods-DesafioHotmartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmartTests.release.xcconfig"; path = "Target Support Files/Pods-DesafioHotmartTests/Pods-DesafioHotmartTests.release.xcconfig"; sourceTree = "<group>"; };
-		D3661D33914B99877E5DC3BC /* Pods_DesafioHotmartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioHotmartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09859F59BC795FC86198566F /* Pods_DesafioHotmart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioHotmart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		306C718C8089F51ED85D5A4B /* Pods-DesafioHotmartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmartTests.release.xcconfig"; path = "Target Support Files/Pods-DesafioHotmartTests/Pods-DesafioHotmartTests.release.xcconfig"; sourceTree = "<group>"; };
+		44C4CF5BCB64B1685421CE77 /* Pods-DesafioHotmartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmartTests.debug.xcconfig"; path = "Target Support Files/Pods-DesafioHotmartTests/Pods-DesafioHotmartTests.debug.xcconfig"; sourceTree = "<group>"; };
+		597B6A3B1A4EBA81D46ACF3A /* Pods_DesafioHotmart_DesafioHotmartUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioHotmart_DesafioHotmartUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A496CCBD6107878ED53A2A2C /* Pods-DesafioHotmart-DesafioHotmartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmart-DesafioHotmartUITests.release.xcconfig"; path = "Target Support Files/Pods-DesafioHotmart-DesafioHotmartUITests/Pods-DesafioHotmart-DesafioHotmartUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B0C81AA2C8269E7286DB6888 /* Pods-DesafioHotmart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmart.release.xcconfig"; path = "Target Support Files/Pods-DesafioHotmart/Pods-DesafioHotmart.release.xcconfig"; sourceTree = "<group>"; };
+		BDD8EE30998638756E57463A /* Pods-DesafioHotmart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmart.debug.xcconfig"; path = "Target Support Files/Pods-DesafioHotmart/Pods-DesafioHotmart.debug.xcconfig"; sourceTree = "<group>"; };
+		C0AEB65DCAABBB7C597E8653 /* Pods_DesafioHotmartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioHotmartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F386EFF3249C261E00D4FE49 /* DesafioHotmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioHotmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F386EFF6249C261E00D4FE49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F386EFF8249C261E00D4FE49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +122,7 @@
 		F3A5D7DE249D8F290044D6F1 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
 		F3A5D7DF249D8F290044D6F1 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		F3A5D7EA249D8F370044D6F1 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		F4CB37BEE3AFDFCE6DFABF27 /* Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig"; path = "Target Support Files/Pods-DesafioHotmart-DesafioHotmartUITests/Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BBE47AC07F0BA93A92BD81F /* Pods_DesafioHotmart.framework in Frameworks */,
+				3F1F8EAF97EE397C9CAB91F7 /* Pods_DesafioHotmart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4340AFB4B2776023DE374B9F /* Pods_DesafioHotmartTests.framework in Frameworks */,
+				B3B8541CC31501BB32FFF861 /* Pods_DesafioHotmartTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,34 +146,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D51761B46B3AE2DFD56AB823 /* Pods_DesafioHotmart_DesafioHotmartUITests.framework in Frameworks */,
+				636E66580664E65DA87D9D7F /* Pods_DesafioHotmart_DesafioHotmartUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		370003E7F63D9DD337D801FE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9C214D39015ADA57600962E6 /* Pods_DesafioHotmart.framework */,
-				0223B88BEB06469072D28170 /* Pods_DesafioHotmart_DesafioHotmartUITests.framework */,
-				D3661D33914B99877E5DC3BC /* Pods_DesafioHotmartTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		430268612742D4C46CAF8A50 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6F7AAB388BB9276E0E630CA0 /* Pods-DesafioHotmart.debug.xcconfig */,
-				A908CB05190BF81F142579C8 /* Pods-DesafioHotmart.release.xcconfig */,
-				59260E7356A37021DDF8E686 /* Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig */,
-				6592BD65DBA9D8C5829EEBE4 /* Pods-DesafioHotmart-DesafioHotmartUITests.release.xcconfig */,
-				03A4777141861ABA22FA06A0 /* Pods-DesafioHotmartTests.debug.xcconfig */,
-				CBD9011C4EBE36141EC46597 /* Pods-DesafioHotmartTests.release.xcconfig */,
+				BDD8EE30998638756E57463A /* Pods-DesafioHotmart.debug.xcconfig */,
+				B0C81AA2C8269E7286DB6888 /* Pods-DesafioHotmart.release.xcconfig */,
+				F4CB37BEE3AFDFCE6DFABF27 /* Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig */,
+				A496CCBD6107878ED53A2A2C /* Pods-DesafioHotmart-DesafioHotmartUITests.release.xcconfig */,
+				44C4CF5BCB64B1685421CE77 /* Pods-DesafioHotmartTests.debug.xcconfig */,
+				306C718C8089F51ED85D5A4B /* Pods-DesafioHotmartTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		790AAAD4160084D11212BFA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09859F59BC795FC86198566F /* Pods_DesafioHotmart.framework */,
+				597B6A3B1A4EBA81D46ACF3A /* Pods_DesafioHotmart_DesafioHotmartUITests.framework */,
+				C0AEB65DCAABBB7C597E8653 /* Pods_DesafioHotmartTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F386EFEA249C261E00D4FE49 = {
@@ -184,7 +184,7 @@
 				F386F017249C262400D4FE49 /* DesafioHotmartUITests */,
 				F386EFF4249C261E00D4FE49 /* Products */,
 				430268612742D4C46CAF8A50 /* Pods */,
-				370003E7F63D9DD337D801FE /* Frameworks */,
+				790AAAD4160084D11212BFA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -340,11 +340,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F386F01D249C262400D4FE49 /* Build configuration list for PBXNativeTarget "DesafioHotmart" */;
 			buildPhases = (
-				5371572FCCA74FA3E8A23686 /* [CP] Check Pods Manifest.lock */,
+				9C0AFF7C452D5ECFC848FC87 /* [CP] Check Pods Manifest.lock */,
 				F386EFEF249C261E00D4FE49 /* Sources */,
 				F386EFF0249C261E00D4FE49 /* Frameworks */,
 				F386EFF1249C261E00D4FE49 /* Resources */,
-				0D8ED1FD9D5A2FB99A36694A /* [CP] Embed Pods Frameworks */,
+				28A0426CAE006F38CF521CCE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -359,7 +359,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F386F020249C262400D4FE49 /* Build configuration list for PBXNativeTarget "DesafioHotmartTests" */;
 			buildPhases = (
-				6526551D7AB314ED6DEB0C49 /* [CP] Check Pods Manifest.lock */,
+				C4101280CCCFEF238D8A95E5 /* [CP] Check Pods Manifest.lock */,
 				F386F005249C262400D4FE49 /* Sources */,
 				F386F006249C262400D4FE49 /* Frameworks */,
 				F386F007249C262400D4FE49 /* Resources */,
@@ -378,11 +378,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F386F023249C262400D4FE49 /* Build configuration list for PBXNativeTarget "DesafioHotmartUITests" */;
 			buildPhases = (
-				345D2736429C686495578A4A /* [CP] Check Pods Manifest.lock */,
+				DB02C07CDF51866D4D7560E5 /* [CP] Check Pods Manifest.lock */,
 				F386F010249C262400D4FE49 /* Sources */,
 				F386F011249C262400D4FE49 /* Frameworks */,
 				F386F012249C262400D4FE49 /* Resources */,
-				6580D477F49F3602571D8F56 /* [CP] Embed Pods Frameworks */,
+				1C4F538181A3A7AA6059DBBC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -479,7 +479,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0D8ED1FD9D5A2FB99A36694A /* [CP] Embed Pods Frameworks */ = {
+		1C4F538181A3A7AA6059DBBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioHotmart-DesafioHotmartUITests/Pods-DesafioHotmart-DesafioHotmartUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioHotmart-DesafioHotmartUITests/Pods-DesafioHotmart-DesafioHotmartUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesafioHotmart-DesafioHotmartUITests/Pods-DesafioHotmart-DesafioHotmartUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28A0426CAE006F38CF521CCE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -496,29 +513,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesafioHotmart/Pods-DesafioHotmart-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		345D2736429C686495578A4A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DesafioHotmart-DesafioHotmartUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5371572FCCA74FA3E8A23686 /* [CP] Check Pods Manifest.lock */ = {
+		9C0AFF7C452D5ECFC848FC87 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -540,7 +535,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6526551D7AB314ED6DEB0C49 /* [CP] Check Pods Manifest.lock */ = {
+		C4101280CCCFEF238D8A95E5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -562,21 +557,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6580D477F49F3602571D8F56 /* [CP] Embed Pods Frameworks */ = {
+		DB02C07CDF51866D4D7560E5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DesafioHotmart-DesafioHotmartUITests/Pods-DesafioHotmart-DesafioHotmartUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DesafioHotmart-DesafioHotmartUITests/Pods-DesafioHotmart-DesafioHotmartUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesafioHotmart-DesafioHotmartUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesafioHotmart-DesafioHotmartUITests/Pods-DesafioHotmart-DesafioHotmartUITests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -776,8 +776,9 @@
 		};
 		F386F01E249C262400D4FE49 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F7AAB388BB9276E0E630CA0 /* Pods-DesafioHotmart.debug.xcconfig */;
+			baseConfigurationReference = BDD8EE30998638756E57463A /* Pods-DesafioHotmart.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TJGSV4PM7V;
@@ -796,8 +797,9 @@
 		};
 		F386F01F249C262400D4FE49 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A908CB05190BF81F142579C8 /* Pods-DesafioHotmart.release.xcconfig */;
+			baseConfigurationReference = B0C81AA2C8269E7286DB6888 /* Pods-DesafioHotmart.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TJGSV4PM7V;
@@ -816,7 +818,7 @@
 		};
 		F386F021249C262400D4FE49 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03A4777141861ABA22FA06A0 /* Pods-DesafioHotmartTests.debug.xcconfig */;
+			baseConfigurationReference = 44C4CF5BCB64B1685421CE77 /* Pods-DesafioHotmartTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -839,7 +841,7 @@
 		};
 		F386F022249C262400D4FE49 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBD9011C4EBE36141EC46597 /* Pods-DesafioHotmartTests.release.xcconfig */;
+			baseConfigurationReference = 306C718C8089F51ED85D5A4B /* Pods-DesafioHotmartTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -862,7 +864,7 @@
 		};
 		F386F024249C262400D4FE49 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59260E7356A37021DDF8E686 /* Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig */;
+			baseConfigurationReference = F4CB37BEE3AFDFCE6DFABF27 /* Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -883,7 +885,7 @@
 		};
 		F386F025249C262400D4FE49 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6592BD65DBA9D8C5829EEBE4 /* Pods-DesafioHotmart-DesafioHotmartUITests.release.xcconfig */;
+			baseConfigurationReference = A496CCBD6107878ED53A2A2C /* Pods-DesafioHotmart-DesafioHotmartUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

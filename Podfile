@@ -7,7 +7,8 @@ target 'DesafioHotmart' do
   pod "CollectionViewWaterfallLayout"
   pod 'Cosmos', '~> 22.1'
   pod 'Alamofire', '~> 5.2'
-  pod 'OpenSans'
+  pod 'DZNEmptyDataSet'
+  pod 'SDWebImage', '~> 5.0'
   # Pods for DesafioHotmart
   
   target 'DesafioHotmartTests' do
