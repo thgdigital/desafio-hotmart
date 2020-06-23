@@ -41,10 +41,4 @@ extension DetailViewController: DetailPresenterView {
     func update(sections: [Sections]) {
         self.sections = sections
     }
-    
-    func setupNavigationBar() {
-        
-    }
-    
-    
 }

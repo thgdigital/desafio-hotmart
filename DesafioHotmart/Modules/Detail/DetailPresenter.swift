@@ -45,5 +45,4 @@ class DetailPresenter: NSObject {
 }
 protocol DetailPresenterView: class {
     func update(sections: [Sections])
-    func setupNavigationBar()
 }
