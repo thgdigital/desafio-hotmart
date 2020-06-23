@@ -10,17 +10,19 @@ import UIKit
 
 class SectionDetailHeader: Sections {
     
-    override func header() -> CollectionViewHeader.Type? {
+
+    override func cell(for indexPath: IndexPath) -> CollectionViewCell.Type {
         DetailHeader.self
+
+    }
+   
+    override func getCellSize(_ cell: CollectionViewCell.Type, for indexPath: IndexPath) -> CGSize {
+        .init(width: UIScreen.main.bounds.width, height: 414)
     }
     
-    override func willDisplayHeader(_ headerView: CollectionViewHeader) {
-        if let itemHeader = items.first as? HeaderItem, let view = headerView as? DetailHeader {
-            view.configure(item: itemHeader)
+    override func willDisplayCell(_ cell: CollectionViewCell, at indexPath: IndexPath) {
+        if let header = cell as? DetailHeader, let headerItem = items[indexPath.row] as? HeaderItem {
+            header.configure(item: headerItem)
         }
     }
-    override func getHeaderSize(collectionWidth: CGFloat) -> CGSize {
-        .init(width: collectionWidth, height: 414)
-    }
-    
 }

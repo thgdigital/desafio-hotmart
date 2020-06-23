@@ -13,6 +13,7 @@ class DetailPresenter: NSObject {
     var manager: LocationManager
     var idLocation: Int
     weak var view: DetailPresenterView?
+    var photosType:[LocationType] = [.barbearia, .bares, .cafeteria, .coworking, .padaria, .produtosNaturais, .restaurante, .sucosNaturais]
     
     init(idLocation: Int, manager: LocationManager, view: DetailPresenterView) {
         self.idLocation = idLocation
@@ -30,8 +31,10 @@ class DetailPresenter: NSObject {
             switch result {
                 
             case .success(let model):
+                let photosUrls = strongSelf.photosType.map({ LocationItem.mapppingImage(type: $0)})
                 let sections = [
-                    SectionDetailHeader(items: [HeaderItem(model: model)])
+                    SectionDetailHeader(items: [HeaderItem(model: model)]),
+                    SectionGallery(items: photosUrls, name: "Fotos")
                 ]
                 strongSelf.view?.update(sections: sections)
             case .failure(let error):

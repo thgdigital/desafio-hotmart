@@ -71,7 +71,7 @@
                 <outlet property="backgroundImageView" destination="mCl-vQ-N8p" id="8WX-zK-PBG"/>
                 <outlet property="boxRewies" destination="2PQ-AK-TNK" id="Vy1-up-FGV"/>
                 <outlet property="rewiesCosmo" destination="Q9e-xy-dw9" id="uKA-Xa-qFc"/>
-                <outlet property="titleLabel" destination="tS7-DZ-biv" id="fjp-YR-6C5"/>
+                <outlet property="titleHaderLabel" destination="tS7-DZ-biv" id="s4b-N9-Joa"/>
             </connections>
             <point key="canvasLocation" x="173.18840579710147" y="210.9375"/>
         </collectionReusableView>
