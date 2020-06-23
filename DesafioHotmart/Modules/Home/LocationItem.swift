@@ -9,6 +9,7 @@
 import  UIKit
 
 class LocationItem {
+    var id: Int = 0
     var title: String = ""
     var subTitle: String = ""
     var rewies: Double = 1.0
@@ -18,6 +19,7 @@ class LocationItem {
     
     static func mapping(model: LocationModel, index: Int) -> LocationItem {
         let locations: LocationItem = LocationItem()
+        locations.id = model.id
         locations.cellSizes = .init(width: 140, height: Int.random(in: 180..<240))
         if index.isMultiple(of: 2){
             locations.color = .colorBlue

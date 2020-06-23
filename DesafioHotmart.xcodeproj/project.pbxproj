@@ -10,6 +10,14 @@
 		3F1F8EAF97EE397C9CAB91F7 /* Pods_DesafioHotmart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09859F59BC795FC86198566F /* Pods_DesafioHotmart.framework */; };
 		636E66580664E65DA87D9D7F /* Pods_DesafioHotmart_DesafioHotmartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597B6A3B1A4EBA81D46ACF3A /* Pods_DesafioHotmart_DesafioHotmartUITests.framework */; };
 		B3B8541CC31501BB32FFF861 /* Pods_DesafioHotmartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0AEB65DCAABBB7C597E8653 /* Pods_DesafioHotmartTests.framework */; };
+		F32C60FF24A22F8D0031DD06 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C60FE24A22F8D0031DD06 /* DetailViewController.swift */; };
+		F32C610224A2315B0031DD06 /* DetailHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C610024A2315B0031DD06 /* DetailHeader.swift */; };
+		F32C610324A2315B0031DD06 /* DetailHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32C610124A2315B0031DD06 /* DetailHeader.xib */; };
+		F32C610524A24C760031DD06 /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C610424A24C760031DD06 /* DetailModel.swift */; };
+		F32C610724A24D700031DD06 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C610624A24D700031DD06 /* DetailRouter.swift */; };
+		F32C610924A24EAF0031DD06 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C610824A24EAF0031DD06 /* DetailPresenter.swift */; };
+		F32C610B24A255560031DD06 /* SectionDetailHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C610A24A255560031DD06 /* SectionDetailHeader.swift */; };
+		F32C610D24A258B90031DD06 /* HeaderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C610C24A258B90031DD06 /* HeaderItem.swift */; };
 		F386EFF7249C261E00D4FE49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386EFF6249C261E00D4FE49 /* AppDelegate.swift */; };
 		F386EFF9249C261E00D4FE49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386EFF8249C261E00D4FE49 /* SceneDelegate.swift */; };
 		F386EFFB249C261E00D4FE49 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386EFFA249C261E00D4FE49 /* HomeListView.swift */; };
@@ -77,6 +85,14 @@
 		B0C81AA2C8269E7286DB6888 /* Pods-DesafioHotmart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmart.release.xcconfig"; path = "Target Support Files/Pods-DesafioHotmart/Pods-DesafioHotmart.release.xcconfig"; sourceTree = "<group>"; };
 		BDD8EE30998638756E57463A /* Pods-DesafioHotmart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmart.debug.xcconfig"; path = "Target Support Files/Pods-DesafioHotmart/Pods-DesafioHotmart.debug.xcconfig"; sourceTree = "<group>"; };
 		C0AEB65DCAABBB7C597E8653 /* Pods_DesafioHotmartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioHotmartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32C60FE24A22F8D0031DD06 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F32C610024A2315B0031DD06 /* DetailHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeader.swift; sourceTree = "<group>"; };
+		F32C610124A2315B0031DD06 /* DetailHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailHeader.xib; sourceTree = "<group>"; };
+		F32C610424A24C760031DD06 /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
+		F32C610624A24D700031DD06 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		F32C610824A24EAF0031DD06 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		F32C610A24A255560031DD06 /* SectionDetailHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDetailHeader.swift; sourceTree = "<group>"; };
+		F32C610C24A258B90031DD06 /* HeaderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderItem.swift; sourceTree = "<group>"; };
 		F386EFF3249C261E00D4FE49 /* DesafioHotmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioHotmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F386EFF6249C261E00D4FE49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F386EFF8249C261E00D4FE49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +192,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F32C60FD24A22F2B0031DD06 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F32C60FE24A22F8D0031DD06 /* DetailViewController.swift */,
+				F32C610024A2315B0031DD06 /* DetailHeader.swift */,
+				F32C610124A2315B0031DD06 /* DetailHeader.xib */,
+				F32C610624A24D700031DD06 /* DetailRouter.swift */,
+				F32C610824A24EAF0031DD06 /* DetailPresenter.swift */,
+				F32C610A24A255560031DD06 /* SectionDetailHeader.swift */,
+				F32C610C24A258B90031DD06 /* HeaderItem.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		F386EFEA249C261E00D4FE49 = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +293,7 @@
 		F3A5D7B9249D2F840044D6F1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F32C60FD24A22F2B0031DD06 /* Detail */,
 				F3A5D7BA249D2F8E0044D6F1 /* Home */,
 			);
 			path = Modules;
@@ -286,6 +317,7 @@
 			children = (
 				F3A5D7C6249D735D0044D6F1 /* LocationModel.swift */,
 				F3A5D7D1249D80680044D6F1 /* LocationsRoute.swift */,
+				F32C610424A24C760031DD06 /* DetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -457,6 +489,7 @@
 				F386EFFE249C261F00D4FE49 /* Main.storyboard in Resources */,
 				F3A5D7E0249D8F290044D6F1 /* OpenSans-LightItalic.ttf in Resources */,
 				F3A5D7E5249D8F290044D6F1 /* OpenSans-Bold.ttf in Resources */,
+				F32C610324A2315B0031DD06 /* DetailHeader.xib in Resources */,
 				F3A5D7E3249D8F290044D6F1 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				F3A5D7B2249D2E340044D6F1 /* CollectionViewCell.xib in Resources */,
 			);
@@ -587,15 +620,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3A5D7A4249D044A0044D6F1 /* PinterestLayout.swift in Sources */,
+				F32C610D24A258B90031DD06 /* HeaderItem.swift in Sources */,
 				F3A5D7B4249D2E340044D6F1 /* CollectionViewHeader.swift in Sources */,
 				F3A5D7B0249D2E340044D6F1 /* Sections.swift in Sources */,
 				F3A5D7BD249D2FAF0044D6F1 /* LocationCell.swift in Sources */,
+				F32C610524A24C760031DD06 /* DetailModel.swift in Sources */,
 				F3A5D7CB249D74A30044D6F1 /* ColorsPrimary.swift in Sources */,
+				F32C610224A2315B0031DD06 /* DetailHeader.swift in Sources */,
 				F386EFFB249C261E00D4FE49 /* HomeListView.swift in Sources */,
+				F32C610924A24EAF0031DD06 /* DetailPresenter.swift in Sources */,
+				F32C60FF24A22F8D0031DD06 /* DetailViewController.swift in Sources */,
+				F32C610724A24D700031DD06 /* DetailRouter.swift in Sources */,
 				F3A5D7B3249D2E340044D6F1 /* CollectionViewFooter.swift in Sources */,
 				F3A5D7EB249D8F370044D6F1 /* Fonts.swift in Sources */,
 				F3A5D7B1249D2E340044D6F1 /* CollectionViewCell.swift in Sources */,
 				F3A5D7D0249D7D430044D6F1 /* LocationManager.swift in Sources */,
+				F32C610B24A255560031DD06 /* SectionDetailHeader.swift in Sources */,
 				F386EFF7249C261E00D4FE49 /* AppDelegate.swift in Sources */,
 				F3A5D7D4249D856C0044D6F1 /* HomeRoute.swift in Sources */,
 				F386EFF9249C261E00D4FE49 /* SceneDelegate.swift in Sources */,

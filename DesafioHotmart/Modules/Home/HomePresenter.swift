@@ -16,13 +16,18 @@ protocol HomePresenterView: class {
 class HomePresenter: NSObject {
     var manager: LocationManager
     weak var view: HomePresenterView?
+    var route: HomeRoute
+    
     init(manager: LocationManager, with view: HomePresenterView, route: HomeRoute) {
         self.manager = manager
         self.view = view
+        self.route = route
     }
     
     func viewDidLoad() {
-        view?.setupNavigationBar()
+        
+       
+        
         manager.fetch { [weak self] result in
             guard let strongSelf = self else {
                 return
@@ -37,5 +42,11 @@ class HomePresenter: NSObject {
         }
     }
     
+    func didSelected(id: Int) {
+        route.showDetail(id: id)
+    }
     
+    func updateView(){
+         view?.setupNavigationBar()
+    }
 }

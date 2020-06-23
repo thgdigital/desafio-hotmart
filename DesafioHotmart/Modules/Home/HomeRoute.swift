@@ -18,4 +18,11 @@ class HomeRoute {
         viewController = homelistView
         return homelistView
     }
+    
+    func showDetail(id: Int){
+        let detail = DetailRouter().makeScreen(idLocation: id)
+//        detail.modalPresentationStyle = .fullScreen
+        viewController?.navigationController?.pushViewController(detail, animated: true)
+//        viewController?.present(detail, animated: true, completion: nil)
+    }
 }

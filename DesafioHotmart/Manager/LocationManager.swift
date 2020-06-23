@@ -33,6 +33,22 @@ class LocationManager {
             }
         }
     }
+    
+    func findLocation(id: Int, completionHandler: @escaping  (Result<DetailModel, AFError>)-> Void){
+        performRequest(route: .location(id: id)) { response in
+                   switch response.result {
+                       
+                   case .success:
+                       guard let data = response.data, let locations: DetailModel = self.decodeParse(jsonData: data) else {
+                           return
+                       }
+                       completionHandler(.success(locations))
+                   case .failure(let error):
+                       print(error)
+                   }
+               }
+    }
+    
     fileprivate func decodeParse<T: Codable>(jsonData: Data) -> T? {
         do {
             let decoder = JSONDecoder()

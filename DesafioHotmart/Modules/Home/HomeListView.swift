@@ -39,6 +39,11 @@ class HomeListView: UICollectionViewController {
 
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter.updateView()
+    }
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         .lightContent
     }
@@ -58,6 +63,10 @@ extension HomeListView {
         cell.shadowDecorate()
         
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        presenter.didSelected(id: items[indexPath.row].id)
     }
     
 }
