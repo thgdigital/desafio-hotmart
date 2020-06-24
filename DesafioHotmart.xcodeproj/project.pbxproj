@@ -31,6 +31,9 @@
 		F36AB36224A2D6B500F52A54 /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F36AB36024A2D6B500F52A54 /* InfoCell.xib */; };
 		F36AB36424A2DA9300F52A54 /* InfoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36AB36324A2DA9300F52A54 /* InfoItem.swift */; };
 		F36AB36624A3745A00F52A54 /* SectionReviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36AB36524A3745900F52A54 /* SectionReviews.swift */; };
+		F36AB36924A3756500F52A54 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36AB36724A3756500F52A54 /* ReviewCell.swift */; };
+		F36AB36A24A3756500F52A54 /* ReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F36AB36824A3756500F52A54 /* ReviewCell.xib */; };
+		F36AB36C24A37BCD00F52A54 /* ReviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36AB36B24A37BCD00F52A54 /* ReviewItem.swift */; };
 		F386EFF7249C261E00D4FE49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386EFF6249C261E00D4FE49 /* AppDelegate.swift */; };
 		F386EFF9249C261E00D4FE49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386EFF8249C261E00D4FE49 /* SceneDelegate.swift */; };
 		F386EFFB249C261E00D4FE49 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386EFFA249C261E00D4FE49 /* HomeListView.swift */; };
@@ -119,6 +122,9 @@
 		F36AB36024A2D6B500F52A54 /* InfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCell.xib; sourceTree = "<group>"; };
 		F36AB36324A2DA9300F52A54 /* InfoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoItem.swift; sourceTree = "<group>"; };
 		F36AB36524A3745900F52A54 /* SectionReviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionReviews.swift; sourceTree = "<group>"; };
+		F36AB36724A3756500F52A54 /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		F36AB36824A3756500F52A54 /* ReviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewCell.xib; sourceTree = "<group>"; };
+		F36AB36B24A37BCD00F52A54 /* ReviewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewItem.swift; sourceTree = "<group>"; };
 		F386EFF3249C261E00D4FE49 /* DesafioHotmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioHotmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F386EFF6249C261E00D4FE49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F386EFF8249C261E00D4FE49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -239,6 +245,9 @@
 				F36AB36024A2D6B500F52A54 /* InfoCell.xib */,
 				F36AB36324A2DA9300F52A54 /* InfoItem.swift */,
 				F36AB36524A3745900F52A54 /* SectionReviews.swift */,
+				F36AB36724A3756500F52A54 /* ReviewCell.swift */,
+				F36AB36824A3756500F52A54 /* ReviewCell.xib */,
+				F36AB36B24A37BCD00F52A54 /* ReviewItem.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -514,6 +523,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F36AB35C24A27DE200F52A54 /* AboutCell.xib in Resources */,
+				F36AB36A24A3756500F52A54 /* ReviewCell.xib in Resources */,
 				F3A5D7E9249D8F290044D6F1 /* OpenSans-SemiBold.ttf in Resources */,
 				F3A5D7E2249D8F290044D6F1 /* OpenSans-Regular.ttf in Resources */,
 				F3A5D7BE249D2FAF0044D6F1 /* LocationCell.xib in Resources */,
@@ -681,6 +691,7 @@
 				F3A5D7B3249D2E340044D6F1 /* CollectionViewFooter.swift in Sources */,
 				F3A5D7EB249D8F370044D6F1 /* Fonts.swift in Sources */,
 				F3A5D7B1249D2E340044D6F1 /* CollectionViewCell.swift in Sources */,
+				F36AB36924A3756500F52A54 /* ReviewCell.swift in Sources */,
 				F3A5D7D0249D7D430044D6F1 /* LocationManager.swift in Sources */,
 				F36AB35524A26D1200F52A54 /* PhotoCell.swift in Sources */,
 				F36AB34E24A26A3F00F52A54 /* SectionGallery.swift in Sources */,
@@ -689,6 +700,7 @@
 				F3A5D7D4249D856C0044D6F1 /* HomeRoute.swift in Sources */,
 				F386EFF9249C261E00D4FE49 /* SceneDelegate.swift in Sources */,
 				F3A5D7C2249D6C010044D6F1 /* Extension.swift in Sources */,
+				F36AB36C24A37BCD00F52A54 /* ReviewItem.swift in Sources */,
 				F3A5D7CD249D7CFB0044D6F1 /* HomePresenter.swift in Sources */,
 				F3A5D7AF249D2E340044D6F1 /* CollectionViewController.swift in Sources */,
 				F3A5D7D2249D80680044D6F1 /* LocationsRoute.swift in Sources */,

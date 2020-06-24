@@ -17,6 +17,7 @@ class DetailViewController: CollectionViewController {
         if #available(iOS 11.0, *) {
             collectionView.contentInsetAdjustmentBehavior = .never
         }
+        collectionView.contentInset.bottom = 20
     }
     
     override func viewWillAppear(_ animated: Bool) {
