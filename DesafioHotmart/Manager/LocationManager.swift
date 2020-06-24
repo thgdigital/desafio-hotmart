@@ -12,11 +12,11 @@ import Alamofire
 class LocationManager {
     
     @discardableResult
-       private func performRequest(route: LocationsRoute, completion: @escaping (AFDataResponse<Any>) -> Void) -> DataRequest {
-           return AF.request(route).validate().responseJSON {response in
-               completion(response)
-           }
-       }
+    private func performRequest(route: LocationsRoute, completion: @escaping (AFDataResponse<Any>) -> Void) -> DataRequest {
+        return AF.request(route).validate().responseJSON {response in
+            completion(response)
+        }
+    }
     
     func fetch(completionHandler: @escaping  (Result<Locations, AFError>)-> Void) {
         performRequest(route: .getLocations) { response in
@@ -34,19 +34,71 @@ class LocationManager {
         }
     }
     
-    func findLocation(id: Int, completionHandler: @escaping  (Result<DetailModel, AFError>)-> Void){
+    func findLocation(id: Int, completionHandler: @escaping  (Result<DetailItem, AFError>)-> Void){
         performRequest(route: .location(id: id)) { response in
-                   switch response.result {
-                       
-                   case .success:
-                       guard let data = response.data, let locations: DetailModel = self.decodeParse(jsonData: data) else {
-                           return
-                       }
-                       completionHandler(.success(locations))
-                   case .failure(let error):
-                       print(error)
-                   }
-               }
+            switch response.result {
+                
+            case .success:
+                guard let data = response.data else {
+                    return
+                }
+                var item = DetailItem()
+                
+                if let location: DetailModel<Schedule> = self.decodeParse(jsonData: data) {
+                    item = self.mappingLocationDetail(location: location)
+                    item.schedule = self.mappingSchedule(data: location.schedule)
+                } else if let location: DetailModel<[Schedule]> = self.decodeParse(jsonData: data) {
+                    item = self.mappingLocationDetail(location: location)
+                    if let schedule = location.schedule.first {
+                        item.schedule = self.mappingSchedule(data: schedule)
+                    }
+                }
+                completionHandler(.success(item))
+                
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
+    }
+    func mappingLocationDetail<T : Codable>(location: DetailModel<T>) -> DetailItem {
+        var item = DetailItem()
+        item.about = location.about
+        item.phone = location.phone
+        item.adress = location.adress
+        item.name = location.name
+        item.id = location.id
+        item.review = location.review
+        item.type = location.type
+        return item
+    }
+    
+    func mappingSchedule(data: Schedule) -> ScheduleItem {
+        
+        var item = ScheduleItem()
+        if let friday = data.friday {
+            item.friday = DayItem(model: friday)
+        }
+        if let monday = data.monday {
+            item.monday = DayItem(model: monday)
+        }
+        if let saturday = data.saturday {
+            item.saturday = DayItem(model: saturday)
+        }
+        if let sunday = data.sunday {
+            item.sunday = DayItem(model: sunday)
+        }
+        if let thursday = data.thursday {
+            item.thursday = DayItem(model: thursday)
+        }
+        if let tuesday = data.tuesday {
+            item.tuesday = DayItem(model: tuesday)
+        }
+        if let wednesday = data.wednesday {
+            item.wednesday = DayItem(model: wednesday)
+        }
+        
+        return item
     }
     
     fileprivate func decodeParse<T: Codable>(jsonData: Data) -> T? {

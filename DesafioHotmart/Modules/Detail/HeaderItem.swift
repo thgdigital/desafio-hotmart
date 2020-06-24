@@ -13,9 +13,9 @@ struct HeaderItem {
     var name: String = ""
     var rewies: Double = 1.0
     
-    init(model: DetailModel) {
-        image = LocationItem.mapppingImage(type: model.type)
-        name = model.name
-        rewies = model.review
+    init(item: DetailItem) {
+        image = LocationItem.mapppingImage(type: item.type)
+        name = item.name
+        rewies = item.review
     }
 }

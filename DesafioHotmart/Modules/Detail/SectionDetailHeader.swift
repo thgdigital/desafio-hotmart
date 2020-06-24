@@ -17,7 +17,7 @@ class SectionDetailHeader: Sections {
     }
    
     override func getCellSize(_ cell: CollectionViewCell.Type, for indexPath: IndexPath) -> CGSize {
-        .init(width: UIScreen.main.bounds.width, height: 414)
+        .init(width: UIScreen.main.bounds.width, height: 430)
     }
     
     override func willDisplayCell(_ cell: CollectionViewCell, at indexPath: IndexPath) {
