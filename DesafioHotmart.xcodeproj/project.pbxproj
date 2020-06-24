@@ -26,6 +26,11 @@
 		F36AB35824A27AFC00F52A54 /* SectionAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36AB35724A27AFC00F52A54 /* SectionAbout.swift */; };
 		F36AB35B24A27DE200F52A54 /* AboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36AB35924A27DE200F52A54 /* AboutCell.swift */; };
 		F36AB35C24A27DE200F52A54 /* AboutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F36AB35A24A27DE200F52A54 /* AboutCell.xib */; };
+		F36AB35E24A2D68D00F52A54 /* SectionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36AB35D24A2D68C00F52A54 /* SectionInfo.swift */; };
+		F36AB36124A2D6B500F52A54 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36AB35F24A2D6B500F52A54 /* InfoCell.swift */; };
+		F36AB36224A2D6B500F52A54 /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F36AB36024A2D6B500F52A54 /* InfoCell.xib */; };
+		F36AB36424A2DA9300F52A54 /* InfoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36AB36324A2DA9300F52A54 /* InfoItem.swift */; };
+		F36AB36624A3745A00F52A54 /* SectionReviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36AB36524A3745900F52A54 /* SectionReviews.swift */; };
 		F386EFF7249C261E00D4FE49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386EFF6249C261E00D4FE49 /* AppDelegate.swift */; };
 		F386EFF9249C261E00D4FE49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386EFF8249C261E00D4FE49 /* SceneDelegate.swift */; };
 		F386EFFB249C261E00D4FE49 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386EFFA249C261E00D4FE49 /* HomeListView.swift */; };
@@ -109,6 +114,11 @@
 		F36AB35724A27AFC00F52A54 /* SectionAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionAbout.swift; sourceTree = "<group>"; };
 		F36AB35924A27DE200F52A54 /* AboutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCell.swift; sourceTree = "<group>"; };
 		F36AB35A24A27DE200F52A54 /* AboutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutCell.xib; sourceTree = "<group>"; };
+		F36AB35D24A2D68C00F52A54 /* SectionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionInfo.swift; sourceTree = "<group>"; };
+		F36AB35F24A2D6B500F52A54 /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		F36AB36024A2D6B500F52A54 /* InfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCell.xib; sourceTree = "<group>"; };
+		F36AB36324A2DA9300F52A54 /* InfoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoItem.swift; sourceTree = "<group>"; };
+		F36AB36524A3745900F52A54 /* SectionReviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionReviews.swift; sourceTree = "<group>"; };
 		F386EFF3249C261E00D4FE49 /* DesafioHotmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioHotmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F386EFF6249C261E00D4FE49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F386EFF8249C261E00D4FE49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -224,6 +234,11 @@
 				F36AB35724A27AFC00F52A54 /* SectionAbout.swift */,
 				F36AB35924A27DE200F52A54 /* AboutCell.swift */,
 				F36AB35A24A27DE200F52A54 /* AboutCell.xib */,
+				F36AB35D24A2D68C00F52A54 /* SectionInfo.swift */,
+				F36AB35F24A2D6B500F52A54 /* InfoCell.swift */,
+				F36AB36024A2D6B500F52A54 /* InfoCell.xib */,
+				F36AB36324A2DA9300F52A54 /* InfoItem.swift */,
+				F36AB36524A3745900F52A54 /* SectionReviews.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -507,6 +522,7 @@
 				F386F003249C262400D4FE49 /* LaunchScreen.storyboard in Resources */,
 				F3A5D7E1249D8F290044D6F1 /* OpenSans-ExtraBold.ttf in Resources */,
 				F3A5D7B5249D2E340044D6F1 /* CollectionViewFooter.xib in Resources */,
+				F36AB36224A2D6B500F52A54 /* InfoCell.xib in Resources */,
 				F3A5D7AE249D2E340044D6F1 /* CollectionViewHeader.xib in Resources */,
 				F3A5D7E4249D8F290044D6F1 /* OpenSans-BoldItalic.ttf in Resources */,
 				F386F000249C262400D4FE49 /* Assets.xcassets in Resources */,
@@ -646,6 +662,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36AB35E24A2D68D00F52A54 /* SectionInfo.swift in Sources */,
 				F3A5D7A4249D044A0044D6F1 /* PinterestLayout.swift in Sources */,
 				F32C610D24A258B90031DD06 /* HeaderItem.swift in Sources */,
 				F3A5D7B4249D2E340044D6F1 /* CollectionViewHeader.swift in Sources */,
@@ -656,7 +673,9 @@
 				F3A5D7CB249D74A30044D6F1 /* ColorsPrimary.swift in Sources */,
 				F32C610224A2315B0031DD06 /* DetailHeader.swift in Sources */,
 				F386EFFB249C261E00D4FE49 /* HomeListView.swift in Sources */,
+				F36AB36424A2DA9300F52A54 /* InfoItem.swift in Sources */,
 				F32C610924A24EAF0031DD06 /* DetailPresenter.swift in Sources */,
+				F36AB36624A3745A00F52A54 /* SectionReviews.swift in Sources */,
 				F32C60FF24A22F8D0031DD06 /* DetailViewController.swift in Sources */,
 				F32C610724A24D700031DD06 /* DetailRouter.swift in Sources */,
 				F3A5D7B3249D2E340044D6F1 /* CollectionViewFooter.swift in Sources */,
@@ -674,6 +693,7 @@
 				F3A5D7AF249D2E340044D6F1 /* CollectionViewController.swift in Sources */,
 				F3A5D7D2249D80680044D6F1 /* LocationsRoute.swift in Sources */,
 				F3A5D7B8249D2E8E0044D6F1 /* ReusableIdentifier.swift in Sources */,
+				F36AB36124A2D6B500F52A54 /* InfoCell.swift in Sources */,
 				F36AB35824A27AFC00F52A54 /* SectionAbout.swift in Sources */,
 				F3A5D7C7249D735D0044D6F1 /* LocationModel.swift in Sources */,
 				F3A5D7C4249D71420044D6F1 /* LocationItem.swift in Sources */,

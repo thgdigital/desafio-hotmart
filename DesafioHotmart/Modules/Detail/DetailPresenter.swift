@@ -33,10 +33,17 @@ class DetailPresenter: NSObject {
             case .success(let model):
                 let photosUrls = strongSelf.photosType.map({ LocationItem.mapppingImage(type: $0)})
                 let about = model.about
+                let infos = [
+                    InfoItem(image: "time", text: "seg a sex: 7h às 23h \n sáb e dom: 8h às 20h"),
+                    InfoItem(image: "phone", text: model.phone),
+                    InfoItem(image: "pin", text: model.adress)
+                    
+                ]
                 let sections = [
                     SectionDetailHeader(items: [HeaderItem(item: model)]),
                     SectionGallery(items: photosUrls, name: "Fotos"),
-                    SectionAbout(items: [about], name: "Sobre")
+                    SectionAbout(items: [about], name: "Sobre"),
+                    SectionInfo(items: infos)
                 ]
                 strongSelf.view?.update(sections: sections)
             case .failure(let error):

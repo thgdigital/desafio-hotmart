@@ -14,4 +14,5 @@ extension UIColor {
     static var colorCreme = UIColor(red: 252/255, green: 255/255, blue: 177/255, alpha: 1)
     static var colorAqua = UIColor(red: 19/255, green: 206/255, blue: 218/255, alpha: 1)
     static var colorTopaz = UIColor(red: 20/255, green: 173/255, blue: 218/255, alpha: 1)
+    static var darkGraphite = UIColor(red: 51/255, green: 51/255, blue: 51/255, alpha: 1)
 }

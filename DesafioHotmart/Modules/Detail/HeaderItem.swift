@@ -11,11 +11,11 @@ import UIKit
 struct HeaderItem {
     var image: String = ""
     var name: String = ""
-    var rewies: Double = 1.0
+    var review: Double = 1.0
     
     init(item: DetailItem) {
         image = LocationItem.mapppingImage(type: item.type)
         name = item.name
-        rewies = item.review
+        review = item.review
     }
 }

@@ -25,8 +25,8 @@ class DetailHeader: CollectionViewCell {
     
     func configure(item: HeaderItem) {
         titleHaderLabel.text = item.name
-        rewiesCosmo.rating = item.rewies
-        rewiesCosmo.text = "\(item.rewies)"
+        rewiesCosmo.rating = item.review
+        rewiesCosmo.text = "\(item.review)"
         backgroundImageView.sd_setImage(with: URL(string: item.image), completed: nil)
     }
 }
