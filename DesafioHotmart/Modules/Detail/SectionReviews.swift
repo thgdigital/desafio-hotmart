@@ -18,6 +18,10 @@ class SectionReviews: Sections {
         headerView.configure(title: name)
     }
     
+    override func footer() -> CollectionViewFooter.Type? {
+        ReviewsFooter.self
+    }
+    
     override func cell(for indexPath: IndexPath) -> CollectionViewCell.Type {
         ReviewCell.self
     }

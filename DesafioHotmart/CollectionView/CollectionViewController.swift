@@ -182,6 +182,19 @@ extension CollectionViewController: UICollectionViewDelegateFlowLayout {
         return .zero
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+          let section = sections[section]
+              registerFooter(section: section)
+              if let header = section.header()?.fromNib() {
+                  header.prepareForReuse()
+                  section.willDisplayHeader(header)
+                  header.setNeedsLayout()
+                  header.layoutIfNeeded()
+                  return section.getFooterSize(collectionWidth: collectionView.bounds.width)
+              }
+              return .zero
+    }
+    
     override func collectionView(_ collectionView: UICollectionView, willDisplaySupplementaryView view: UICollectionReusableView, forElementKind elementKind: String, at indexPath: IndexPath) {
         let section = sections[indexPath.section]
         view.setNeedsLayout()

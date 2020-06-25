@@ -75,6 +75,8 @@
 		F3A5D7EB249D8F370044D6F1 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5D7EA249D8F370044D6F1 /* Fonts.swift */; };
 		F3E263F524A453560023003D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E263F424A453560023003D /* TabBarController.swift */; };
 		F3E263F724A453880023003D /* TabBarRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E263F624A453880023003D /* TabBarRoute.swift */; };
+		F3E263FA24A4D1CF0023003D /* ReviewsFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E263F824A4D1CF0023003D /* ReviewsFooter.swift */; };
+		F3E263FB24A4D1CF0023003D /* ReviewsFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3E263F924A4D1CF0023003D /* ReviewsFooter.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -174,6 +176,8 @@
 		F3A5D7EA249D8F370044D6F1 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		F3E263F424A453560023003D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F3E263F624A453880023003D /* TabBarRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRoute.swift; sourceTree = "<group>"; };
+		F3E263F824A4D1CF0023003D /* ReviewsFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsFooter.swift; sourceTree = "<group>"; };
+		F3E263F924A4D1CF0023003D /* ReviewsFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewsFooter.xib; sourceTree = "<group>"; };
 		F4CB37BEE3AFDFCE6DFABF27 /* Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig"; path = "Target Support Files/Pods-DesafioHotmart-DesafioHotmartUITests/Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -252,6 +256,8 @@
 				F36AB36724A3756500F52A54 /* ReviewCell.swift */,
 				F36AB36824A3756500F52A54 /* ReviewCell.xib */,
 				F36AB36B24A37BCD00F52A54 /* ReviewItem.swift */,
+				F3E263F824A4D1CF0023003D /* ReviewsFooter.swift */,
+				F3E263F924A4D1CF0023003D /* ReviewsFooter.xib */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -550,6 +556,7 @@
 				F3A5D7AE249D2E340044D6F1 /* CollectionViewHeader.xib in Resources */,
 				F3A5D7E4249D8F290044D6F1 /* OpenSans-BoldItalic.ttf in Resources */,
 				F386F000249C262400D4FE49 /* Assets.xcassets in Resources */,
+				F3E263FB24A4D1CF0023003D /* ReviewsFooter.xib in Resources */,
 				F3A5D7E8249D8F290044D6F1 /* OpenSans-Italic.ttf in Resources */,
 				F3A5D7E7249D8F290044D6F1 /* OpenSans-SemiBoldItalic.ttf in Resources */,
 				F36AB35224A26ABB00F52A54 /* BoxCell.xib in Resources */,
@@ -700,6 +707,7 @@
 				F36AB36424A2DA9300F52A54 /* InfoItem.swift in Sources */,
 				F32C610924A24EAF0031DD06 /* DetailPresenter.swift in Sources */,
 				F36AB36624A3745A00F52A54 /* SectionReviews.swift in Sources */,
+				F3E263FA24A4D1CF0023003D /* ReviewsFooter.swift in Sources */,
 				F32C60FF24A22F8D0031DD06 /* DetailViewController.swift in Sources */,
 				F32C610724A24D700031DD06 /* DetailRouter.swift in Sources */,
 				F3A5D7B3249D2E340044D6F1 /* CollectionViewFooter.swift in Sources */,

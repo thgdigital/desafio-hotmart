@@ -60,6 +60,10 @@ class Sections {
         CGSize(width: collectionWidth, height: 64)
     }
     
+    func getFooterSize(collectionWidth: CGFloat)-> CGSize {
+        CGSize(width: collectionWidth, height: 64)
+    }
+    
     func setCell(_ cell: CollectionViewCell.Type, size: CGSize, for indexPath: IndexPath) {
         cellsSize[string(for: cell, from: indexPath)] = size
     }
