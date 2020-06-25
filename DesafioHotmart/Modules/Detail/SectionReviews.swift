@@ -35,6 +35,6 @@ class SectionReviews: Sections {
         .init(width: UIScreen.main.bounds.width, height: 140)
     }
     override func cellLineSpace(collectionWidth: CGFloat) -> CGFloat {
-        20
+        8
     }
 }

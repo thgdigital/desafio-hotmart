@@ -41,6 +41,7 @@ class HomeListView: UICollectionViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         presenter.updateView()
     }
     
@@ -78,9 +79,12 @@ extension HomeListView: HomePresenterView {
     }
     
     func setupNavigationBar(){
-        navigationController?.navigationBar.barTintColor = .colorTopaz
-        navigationController?.navigationBar.tintColor = .white
-        navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.navigationBar.barTintColor = .colorTopaz
+        self.navigationController?.navigationBar.backgroundColor = .colorTopaz
+        self.navigationController?.navigationBar.tintColor = .white
+        UIApplication.shared.statusBarUIView?.backgroundColor = .colorTopaz
+        self.navigationController?.setNeedsStatusBarAppearanceUpdate()
     }
 }
 

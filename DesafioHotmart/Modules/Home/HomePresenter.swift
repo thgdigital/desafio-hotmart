@@ -25,9 +25,7 @@ class HomePresenter: NSObject {
     }
     
     func viewDidLoad() {
-        
-       
-        
+
         manager.fetch { [weak self] result in
             guard let strongSelf = self else {
                 return

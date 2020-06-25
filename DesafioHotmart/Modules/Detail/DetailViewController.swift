@@ -17,12 +17,12 @@ class DetailViewController: CollectionViewController {
         if #available(iOS 11.0, *) {
             collectionView.contentInsetAdjustmentBehavior = .never
         }else {
-           collectionView.contentInset.top = -64
+            automaticallyAdjustsScrollViewInsets = false
         }
         collectionView.contentInset.bottom = 20
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "share"), style: .plain, target: nil, action: nil)
-
+        UIApplication.shared.statusBarUIView?.backgroundColor = .clear
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,10 +36,22 @@ class DetailViewController: CollectionViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = false 
+        UIApplication.shared.statusBarUIView?.backgroundColor = .clear
+
     }
+        
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+           let denominator: CGFloat = 50
+           let alpha = min(1, scrollView.contentOffset.y / denominator)
+           self.setNavbar(backgroundColorAlpha: alpha)
+       }
+    
+    private func setNavbar(backgroundColorAlpha alpha: CGFloat) {
+           let newColor = UIColor(red: 0, green: 0, blue: 0, alpha: alpha)
+        navigationController?.navigationBar.backgroundColor = newColor
+        UIApplication.shared.statusBarUIView?.backgroundColor = newColor
+        navigationController?.setNeedsStatusBarAppearanceUpdate()
+       }
 }
 
 extension DetailViewController: DetailPresenterView {
