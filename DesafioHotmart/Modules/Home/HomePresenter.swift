@@ -6,20 +6,23 @@
 //  Copyright © 2020 Thiago Santos. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol HomePresenterView: class {
-    func loading()
-    func stopLoading()
     func update(items: [LocationItem])
     func setupNavigationBar()
-    func showAlertError(title: String, message: String)
+    func updateCollection(viewModel: HomeViewModel)
 }
 
 class HomePresenter: NSObject {
-    var manager: LocationManager
+    fileprivate var manager: LocationManager
     weak var view: HomePresenterView?
     var route: HomeRoute
+    var imageEmpty: UIImage = #imageLiteral(resourceName: "icoAlert")
+    var title: String = "Sem conexão"
+    var message: String = ""
+    var titleButton: String = ""
+    var isLoading: Bool = false
     
     init(manager: LocationManager, with view: HomePresenterView, route: HomeRoute) {
         self.manager = manager
@@ -30,8 +33,23 @@ class HomePresenter: NSObject {
     func viewDidLoad() {
         fetch()
     }
+    var imageAnimation: CAAnimation? {
+        let animation = CABasicAnimation.init(keyPath: "transform")
+        animation.fromValue = NSValue.init(caTransform3D: CATransform3DIdentity)
+        animation.toValue = NSValue.init(caTransform3D: CATransform3DMakeRotation(.pi/2, 0.0, 0.0, 1.0))
+        animation.duration = 0.25
+        animation.isCumulative = true
+        animation.repeatCount = MAXFLOAT
+        
+        return animation;
+    }
     
     func fetch() {
+        isLoading = true
+        imageEmpty = #imageLiteral(resourceName: "loading_imgBlue_78x78")
+        title = ""
+        message = ""
+        view?.updateCollection(viewModel: HomeViewModel(title: title, message: message, imageEmpty: imageEmpty, isLoading: isLoading, titleButton: ""))
         manager.fetch { [weak self] result in
             guard let strongSelf = self else {
                 return
@@ -47,16 +65,19 @@ class HomePresenter: NSObject {
     }
     
     func connectionFailure(with error: NetworkError) {
-        var title = "Sem conexão"
         switch error {
         case .jsonDecoding, .unknown, .http:
+            imageEmpty = #imageLiteral(resourceName: "icoCloud")
             title = "Error Serve"
-            self.view?.showAlertError(title: title, message: "Error no servidor por favor tente mais tarde")
-        case .timeout:
-            self.view?.showAlertError(title: title, message: "Verifique sua conexão com a internet e tente novamente")
-        case .noConnection:
-            self.view?.showAlertError(title: title, message: "Verifique sua conexão com a internet e tente novamente")
+            message = "Error no servidor por favor tente mais tarde"
+        case .timeout, .noConnection:
+            title = "Falha conexão"
+            imageEmpty = #imageLiteral(resourceName: "icoWifi")
+            message = "Verifique sua conexão com a internet e tente novamente"
+            isLoading = false
         }
+        titleButton = "Tentar Novamente"
+        view?.updateCollection(viewModel: HomeViewModel(title: title, message: message, imageEmpty: imageEmpty, isLoading: isLoading, titleButton: titleButton))
     }
     
     func didSelected(id: Int) {

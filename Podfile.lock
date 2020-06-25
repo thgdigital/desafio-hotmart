@@ -2,7 +2,7 @@ PODS:
   - Alamofire (5.2.1)
   - CollectionViewWaterfallLayout (0.5.0)
   - Cosmos (22.1.0)
-  - DZNEmptyDataSet (1.8.1)
+  - EmptyDataSet-Swift (5.0.0)
   - SDWebImage (5.8.1):
     - SDWebImage/Core (= 5.8.1)
   - SDWebImage/Core (5.8.1)
@@ -11,7 +11,7 @@ DEPENDENCIES:
   - Alamofire (~> 5.2)
   - CollectionViewWaterfallLayout
   - Cosmos (~> 22.1)
-  - DZNEmptyDataSet
+  - EmptyDataSet-Swift
   - SDWebImage (~> 5.0)
 
 SPEC REPOS:
@@ -19,16 +19,16 @@ SPEC REPOS:
     - Alamofire
     - CollectionViewWaterfallLayout
     - Cosmos
-    - DZNEmptyDataSet
+    - EmptyDataSet-Swift
     - SDWebImage
 
 SPEC CHECKSUMS:
   Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
   CollectionViewWaterfallLayout: 4399ba01be265fff4da1ed1d607130fe009780e4
   Cosmos: 2795b36ad4bbea1af3050d6d65576ed63875f86a
-  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  EmptyDataSet-Swift: eb382c0c87a2d9c678077385a595cec52da38171
   SDWebImage: e3eae2eda88578db0685a0c88597fdadd9433f05
 
-PODFILE CHECKSUM: 66353b05cd256bb9a6d9c248180c1fb2da87af88
+PODFILE CHECKSUM: d37a1ca77cee1df1ad8a86b306e880592848177e
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3

@@ -8,9 +8,15 @@
 
 import UIKit
 import CollectionViewWaterfallLayout
+import EmptyDataSet_Swift
 
 class HomeListView: UICollectionViewController {
     var presenter: HomePresenter!
+    var viewModel: HomeViewModel!{
+        didSet{
+            collectionView.reloadEmptyDataSet()
+        }
+    }
     
     var items: [LocationItem] = [LocationItem](){
         didSet {
@@ -25,7 +31,8 @@ class HomeListView: UICollectionViewController {
         
         let nibName = UINib(nibName: "LocationCell", bundle: nil)
         collectionView.register(nibName, forCellWithReuseIdentifier: LocationCell.identifier)
-        
+        collectionView.emptyDataSetSource = self
+        collectionView.emptyDataSetDelegate = self
         let layout = CollectionViewWaterfallLayout()
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         layout.headerInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
@@ -36,6 +43,13 @@ class HomeListView: UICollectionViewController {
         collectionView.collectionViewLayout = layout
         
         presenter.viewDidLoad()
+        
+        collectionView.emptyDataSetView {[weak self] view in
+            if let `self` = self {
+                view.image(self.viewModel.imageEmpty)
+                .imageAnimation(self.viewModel.imageAnimation)
+            }
+        }
 
     }
     
@@ -73,23 +87,11 @@ extension HomeListView {
 }
 
 extension HomeListView: HomePresenterView {
-    func loading() {
-        
-    }
     
-    func stopLoading() {
-        
+    func updateCollection(viewModel: HomeViewModel) {
+        self.viewModel = viewModel
     }
-    
-    func showAlertError(title: String, message: String) {
-        UIAlertController.showAlert(title: title, message: message,cancelButtonTitle: "Cancelar", confirmationButtonTitle: "Tentar novamente", viewController: self,
-                                dismissBlock: {
-            self.presenter.fetch()
             
-        })
-    }
-    
-    
     func update(items: [LocationItem]) {
         self.items = items
     }
@@ -105,10 +107,38 @@ extension HomeListView: HomePresenterView {
 }
 
 // MARK: - CollectionViewWaterfallLayoutDelegate
-extension HomeListView: CollectionViewWaterfallLayoutDelegate {
+extension HomeListView: CollectionViewWaterfallLayoutDelegate, EmptyDataSetDelegate, EmptyDataSetSource {
     func collectionView(_ collectionView: UICollectionView, layout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         return items[indexPath.item].cellSizes
     }
+    
+    func title(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
+        let attrs = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .headline)]
+        return NSAttributedString(string: viewModel.title, attributes: attrs)
+    }
+    func description(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
+        let attrs = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .body)]
+        return NSAttributedString(string: viewModel.message, attributes: attrs)
+    }
+
+    func image(forEmptyDataSet scrollView: UIScrollView) -> UIImage? {
+        return viewModel.imageEmpty
+    }
+
+    func buttonTitle(forEmptyDataSet scrollView: UIScrollView, for state: UIControl.State) -> NSAttributedString? {
+        let attrs = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .callout)]
+        return NSAttributedString(string: viewModel.titleButton, attributes:attrs)
+    }
+
+    
+    func emptyDataSet(_ scrollView: UIScrollView, didTapView view: UIView) {
+        presenter.fetch()
+    }
+    
+    func emptyDataSetShouldAnimateImageView(_ scrollView: UIScrollView) -> Bool {
+        return viewModel.isLoading
+    }
+    
 }
 
 import SwiftUI

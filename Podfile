@@ -7,7 +7,7 @@ target 'DesafioHotmart' do
   pod "CollectionViewWaterfallLayout"
   pod 'Cosmos', '~> 22.1'
   pod 'Alamofire', '~> 5.2'
-  pod 'DZNEmptyDataSet'
+  pod 'EmptyDataSet-Swift'
   pod 'SDWebImage', '~> 5.0'
   # Pods for DesafioHotmart
   

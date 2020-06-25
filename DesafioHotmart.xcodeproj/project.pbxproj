@@ -78,6 +78,7 @@
 		F3E263FA24A4D1CF0023003D /* ReviewsFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E263F824A4D1CF0023003D /* ReviewsFooter.swift */; };
 		F3E263FB24A4D1CF0023003D /* ReviewsFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3E263F924A4D1CF0023003D /* ReviewsFooter.xib */; };
 		F3E263FD24A4E8980023003D /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E263FC24A4E8970023003D /* NetworkError.swift */; };
+		F3E263FF24A536C40023003D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E263FE24A536C40023003D /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +181,7 @@
 		F3E263F824A4D1CF0023003D /* ReviewsFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsFooter.swift; sourceTree = "<group>"; };
 		F3E263F924A4D1CF0023003D /* ReviewsFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewsFooter.xib; sourceTree = "<group>"; };
 		F3E263FC24A4E8970023003D /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		F3E263FE24A536C40023003D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F4CB37BEE3AFDFCE6DFABF27 /* Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig"; path = "Target Support Files/Pods-DesafioHotmart-DesafioHotmartUITests/Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -369,6 +371,7 @@
 				F3A5D7C3249D71420044D6F1 /* LocationItem.swift */,
 				F3A5D7CC249D7CFB0044D6F1 /* HomePresenter.swift */,
 				F3A5D7D3249D856C0044D6F1 /* HomeRoute.swift */,
+				F3E263FE24A536C40023003D /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -699,6 +702,7 @@
 				F36AB35E24A2D68D00F52A54 /* SectionInfo.swift in Sources */,
 				F3A5D7A4249D044A0044D6F1 /* PinterestLayout.swift in Sources */,
 				F32C610D24A258B90031DD06 /* HeaderItem.swift in Sources */,
+				F3E263FF24A536C40023003D /* HomeViewModel.swift in Sources */,
 				F3A5D7B4249D2E340044D6F1 /* CollectionViewHeader.swift in Sources */,
 				F3A5D7B0249D2E340044D6F1 /* Sections.swift in Sources */,
 				F3A5D7BD249D2FAF0044D6F1 /* LocationCell.swift in Sources */,
