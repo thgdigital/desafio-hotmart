@@ -13,7 +13,7 @@ class AboutCell: CollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-         titleLabel.font = UIFont(name: "OpenSans-Light", size: 16)
+        titleLabel.font = .titleLight
     }
     
     func configure(title: String) {

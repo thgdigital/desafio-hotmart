@@ -25,11 +25,11 @@ class ReviewCell: CollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        titleLabel.font = UIFont(name: "OpenSans-Regular", size: 16)
+        titleLabel.font = .titleRegular
         titleLabel.textColor = .colorTopaz
-        subTitleLabel.font = UIFont(name: "OpenSans-Regular", size: 14)
+        subTitleLabel.font = .subTitleRegular
         subTitleLabel.textColor = .brownishGrey
-        adressLabel.font = UIFont(name: "OpenSans-Regular", size: 12)
+        adressLabel.font = .subTitleSmallRegular
         adressLabel.textColor = .warmGrey
         avatarImageView.clipsToBounds = true
         avatarImageView.layer.cornerRadius = avatarImageView.frame.width / 2

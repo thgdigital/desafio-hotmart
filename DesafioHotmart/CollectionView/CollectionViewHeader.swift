@@ -19,7 +19,7 @@ class CollectionViewHeader: UICollectionReusableView {
     func configure(title: String) {
         titleLabel?.isHidden = false
         titleLabel.text = title
-        titleLabel.font = UIFont(name: "OpenSans-SemiBold", size: 16)
+        titleLabel.font = .titleSemiBold
         titleLabel.textColor = .colorTopaz
     }
     

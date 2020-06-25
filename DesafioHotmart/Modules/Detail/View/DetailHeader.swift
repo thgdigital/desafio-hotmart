@@ -18,7 +18,7 @@ class DetailHeader: CollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        titleHaderLabel.font = UIFont(name: "OpenSans-Light", size: 32)
+        titleHaderLabel.font = .headerTitleLargeLight
         boxRewies.backgroundColor = .colorTopaz
         backgroundImageView.layer.masksToBounds = true
     }

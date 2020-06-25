@@ -21,10 +21,9 @@ class LocationCell: CollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         titleLabel.textColor = .colorAqua
-        titleLabel.font = UIFont(name: "OpenSans-SemiBold", size: 16)
-        subTitleLabel.font = UIFont(name: "OpenSans-Regular", size: 12)
+        titleLabel.font = .titleSemiBold
+        subTitleLabel.font = .subTitleSmallRegular
     }
     
     func configure(item: LocationItem) {

@@ -15,7 +15,7 @@ class InfoCell: CollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        titleLabel.font = UIFont(name: "OpenSans-Light", size: 14)
+        titleLabel.font = .infoTitleLight
         titleLabel.textColor = .darkGraphite
     }
     
