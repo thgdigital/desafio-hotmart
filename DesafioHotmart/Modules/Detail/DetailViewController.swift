@@ -21,7 +21,7 @@ class DetailViewController: CollectionViewController {
         }
         collectionView.contentInset.bottom = 20
         
-
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "share"), style: .plain, target: nil, action: nil)
 
     }
     
