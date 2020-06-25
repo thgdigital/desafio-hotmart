@@ -241,30 +241,12 @@
 		F32C60FD24A22F2B0031DD06 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				F32C60FE24A22F8D0031DD06 /* DetailViewController.swift */,
-				F32C610024A2315B0031DD06 /* DetailHeader.swift */,
-				F32C610124A2315B0031DD06 /* DetailHeader.xib */,
-				F32C610624A24D700031DD06 /* DetailRouter.swift */,
-				F32C610824A24EAF0031DD06 /* DetailPresenter.swift */,
-				F32C610A24A255560031DD06 /* SectionDetailHeader.swift */,
-				F32C610C24A258B90031DD06 /* HeaderItem.swift */,
-				F36AB34D24A26A3F00F52A54 /* SectionGallery.swift */,
-				F36AB35324A26D1200F52A54 /* PhotoCell.swift */,
-				F36AB35424A26D1200F52A54 /* PhotoCell.xib */,
-				F36AB35724A27AFC00F52A54 /* SectionAbout.swift */,
-				F36AB35924A27DE200F52A54 /* AboutCell.swift */,
-				F36AB35A24A27DE200F52A54 /* AboutCell.xib */,
-				F36AB35D24A2D68C00F52A54 /* SectionInfo.swift */,
-				F36AB35F24A2D6B500F52A54 /* InfoCell.swift */,
-				F36AB36024A2D6B500F52A54 /* InfoCell.xib */,
-				F36AB36324A2DA9300F52A54 /* InfoItem.swift */,
-				F36AB36524A3745900F52A54 /* SectionReviews.swift */,
-				F36AB36724A3756500F52A54 /* ReviewCell.swift */,
-				F36AB36824A3756500F52A54 /* ReviewCell.xib */,
-				F36AB36B24A37BCD00F52A54 /* ReviewItem.swift */,
-				F3E263F824A4D1CF0023003D /* ReviewsFooter.swift */,
-				F3E263F924A4D1CF0023003D /* ReviewsFooter.xib */,
-				F3E2640024A541650023003D /* DetailViewModel.swift */,
+				F3E2640724A548AA0023003D /* Items */,
+				F3E2640624A5489D0023003D /* Presenter */,
+				F3E2640524A5488C0023003D /* Router */,
+				F3E2640424A548670023003D /* Sections */,
+				F3E2640324A548560023003D /* Controller */,
+				F3E2640224A5482C0023003D /* View */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -440,6 +422,72 @@
 				F3E263F624A453880023003D /* TabBarRoute.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		F3E2640224A5482C0023003D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F32C610024A2315B0031DD06 /* DetailHeader.swift */,
+				F32C610124A2315B0031DD06 /* DetailHeader.xib */,
+				F36AB35324A26D1200F52A54 /* PhotoCell.swift */,
+				F36AB35424A26D1200F52A54 /* PhotoCell.xib */,
+				F36AB35924A27DE200F52A54 /* AboutCell.swift */,
+				F36AB35A24A27DE200F52A54 /* AboutCell.xib */,
+				F36AB35F24A2D6B500F52A54 /* InfoCell.swift */,
+				F36AB36024A2D6B500F52A54 /* InfoCell.xib */,
+				F36AB36724A3756500F52A54 /* ReviewCell.swift */,
+				F36AB36824A3756500F52A54 /* ReviewCell.xib */,
+				F3E263F824A4D1CF0023003D /* ReviewsFooter.swift */,
+				F3E263F924A4D1CF0023003D /* ReviewsFooter.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3E2640324A548560023003D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F32C60FE24A22F8D0031DD06 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F3E2640424A548670023003D /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				F32C610A24A255560031DD06 /* SectionDetailHeader.swift */,
+				F36AB34D24A26A3F00F52A54 /* SectionGallery.swift */,
+				F36AB35724A27AFC00F52A54 /* SectionAbout.swift */,
+				F36AB35D24A2D68C00F52A54 /* SectionInfo.swift */,
+				F36AB36524A3745900F52A54 /* SectionReviews.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		F3E2640524A5488C0023003D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F32C610624A24D700031DD06 /* DetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3E2640624A5489D0023003D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F32C610824A24EAF0031DD06 /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3E2640724A548AA0023003D /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				F32C610C24A258B90031DD06 /* HeaderItem.swift */,
+				F36AB36324A2DA9300F52A54 /* InfoItem.swift */,
+				F36AB36B24A37BCD00F52A54 /* ReviewItem.swift */,
+				F3E2640024A541650023003D /* DetailViewModel.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
