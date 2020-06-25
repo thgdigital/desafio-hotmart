@@ -10,6 +10,14 @@ import UIKit
 
 class SectionReviews: Sections {
     
+    override func header() -> CollectionViewHeader.Type? {
+        CollectionViewHeader.self
+    }
+    
+    override func willDisplayHeader(_ headerView: CollectionViewHeader) {
+        headerView.configure(title: name)
+    }
+    
     override func cell(for indexPath: IndexPath) -> CollectionViewCell.Type {
         ReviewCell.self
     }
@@ -18,5 +26,8 @@ class SectionReviews: Sections {
         if let reviewCell = cell as? ReviewCell, let item = items[indexPath.row] as? ReviewItem {
             reviewCell.configure(item: item)
         }
+    }
+    override func getCellSize(_ cell: CollectionViewCell.Type, for indexPath: IndexPath) -> CGSize {
+        .init(width: UIScreen.main.bounds.width, height: 140)
     }
 }
