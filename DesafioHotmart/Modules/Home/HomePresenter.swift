@@ -18,16 +18,13 @@ class HomePresenter: NSObject {
     fileprivate var manager: LocationManager
     weak var view: HomePresenterView?
     var route: HomeRoute
-    var imageEmpty: UIImage = #imageLiteral(resourceName: "icoAlert")
-    var title: String = "Sem conexão"
-    var message: String = ""
-    var titleButton: String = ""
-    var isLoading: Bool = false
+    var viewModel: HomeViewModel
     
     init(manager: LocationManager, with view: HomePresenterView, route: HomeRoute) {
         self.manager = manager
         self.view = view
         self.route = route
+        self.viewModel = HomeViewModel(title: "Carregando", message: "", imageEmpty: #imageLiteral(resourceName: "loading_imgBlue_78x78"), isLoading: true, titleButton: "")
     }
     
     func viewDidLoad() {
@@ -45,11 +42,11 @@ class HomePresenter: NSObject {
     }
     
     func fetch() {
-        isLoading = true
-        imageEmpty = #imageLiteral(resourceName: "loading_imgBlue_78x78")
-        title = ""
-        message = ""
-        view?.updateCollection(viewModel: HomeViewModel(title: title, message: message, imageEmpty: imageEmpty, isLoading: isLoading, titleButton: ""))
+        viewModel.isLoading = true
+        viewModel.imageEmpty = #imageLiteral(resourceName: "loading_imgBlue_78x78")
+        viewModel.title = ""
+        viewModel.message = ""
+        view?.updateCollection(viewModel: viewModel)
         manager.fetch { [weak self] result in
             guard let strongSelf = self else {
                 return
@@ -67,17 +64,17 @@ class HomePresenter: NSObject {
     func connectionFailure(with error: NetworkError) {
         switch error {
         case .jsonDecoding, .unknown, .http:
-            imageEmpty = #imageLiteral(resourceName: "icoCloud")
-            title = "Error Serve"
-            message = "Error no servidor por favor tente mais tarde"
+            viewModel.imageEmpty = #imageLiteral(resourceName: "icoCloud")
+            viewModel.title = "Error Serve"
+            viewModel.message = "Error no servidor por favor tente mais tarde"
         case .timeout, .noConnection:
-            title = "Falha conexão"
-            imageEmpty = #imageLiteral(resourceName: "icoWifi")
-            message = "Verifique sua conexão com a internet e tente novamente"
-            isLoading = false
+            viewModel.title = "Falha conexão"
+            viewModel.imageEmpty = #imageLiteral(resourceName: "icoWifi")
+            viewModel.message = "Verifique sua conexão com a internet e tente novamente"
+            viewModel.isLoading = false
         }
-        titleButton = "Tentar Novamente"
-        view?.updateCollection(viewModel: HomeViewModel(title: title, message: message, imageEmpty: imageEmpty, isLoading: isLoading, titleButton: titleButton))
+        viewModel.titleButton = "Tentar Novamente"
+        view?.updateCollection(viewModel: viewModel)
     }
     
     func didSelected(id: Int) {
