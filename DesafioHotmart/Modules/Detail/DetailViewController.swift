@@ -20,7 +20,8 @@ class DetailViewController: CollectionViewController {
            collectionView.contentInset.top = -64
         }
         collectionView.contentInset.bottom = 20
-        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset(horizontal: -1000.0, vertical: 0.0), for: .default)
+        
+
 
     }
     

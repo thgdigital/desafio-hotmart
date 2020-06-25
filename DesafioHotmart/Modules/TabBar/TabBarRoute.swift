@@ -17,6 +17,7 @@ class TabBarRoute {
             makeNavigationControler(viewcontroller: UIViewController(), image: #imageLiteral(resourceName: "mapOff"), selectedImage: #imageLiteral(resourceName: "mapOn")),
             makeNavigationControler(viewcontroller: UIViewController(), image: #imageLiteral(resourceName: "profileOff"), selectedImage: #imageLiteral(resourceName: "profileOn"))
         ]
+        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset(horizontal: -UIScreen.main.bounds.size.width, vertical: 0), for: UIBarMetrics.default)
         return tabBarController
     }
     

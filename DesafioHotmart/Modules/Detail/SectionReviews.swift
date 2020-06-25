@@ -30,4 +30,7 @@ class SectionReviews: Sections {
     override func getCellSize(_ cell: CollectionViewCell.Type, for indexPath: IndexPath) -> CGSize {
         .init(width: UIScreen.main.bounds.width, height: 140)
     }
+    override func cellLineSpace(collectionWidth: CGFloat) -> CGFloat {
+        20
+    }
 }
