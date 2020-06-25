@@ -1,5 +1,5 @@
 //
-//  HomeViewModel.swift
+//  DetailViewModel.swift
 //  DesafioHotmart
 //
 //  Created by Thiago Vaz on 25/06/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct HomeViewModel {
+struct DetailViewModel {
     var title: String
     var message: String
     var imageEmpty: UIImage
@@ -25,4 +25,3 @@ struct HomeViewModel {
         return animation
     }
 }
-

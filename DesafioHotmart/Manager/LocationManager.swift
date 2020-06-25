@@ -33,7 +33,7 @@ class LocationManager {
                 if let nsError = error.underlyingError as? NSError, nsError.code ==  NSURLErrorNotConnectedToInternet {
                     completionHandler(.failure(.noConnection))
                     
-    
+                    
                     
                 }else{
                     completionHandler(.failure(.http(statusCode: error._code, rawResponseData: response.data ?? Data())))
@@ -43,7 +43,7 @@ class LocationManager {
         }
     }
     
-    func findLocation(id: Int, completionHandler: @escaping  (Result<DetailItem, AFError>)-> Void){
+    func findLocation(id: Int, completionHandler: @escaping  (Result<DetailItem, NetworkError>)-> Void){
         performRequest(route: .location(id: id)) { response in
             switch response.result {
                 
@@ -62,11 +62,17 @@ class LocationManager {
                         item.schedule = self.mappingSchedule(data: schedule)
                     }
                 }
-                //                completionHandler(.failure(AFError.))
                 completionHandler(.success(item))
                 
             case .failure(let error):
-                print((error.underlyingError as? NSError)?.code == NSURLErrorNotConnectedToInternet)
+                if let nsError = error.underlyingError as? NSError, nsError.code ==  NSURLErrorNotConnectedToInternet {
+                    completionHandler(.failure(.noConnection))
+                    
+                    
+                    
+                }else{
+                    completionHandler(.failure(.http(statusCode: error._code, rawResponseData: response.data ?? Data())))
+                }
             }
         }
         

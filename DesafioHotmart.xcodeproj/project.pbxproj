@@ -79,6 +79,7 @@
 		F3E263FB24A4D1CF0023003D /* ReviewsFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3E263F924A4D1CF0023003D /* ReviewsFooter.xib */; };
 		F3E263FD24A4E8980023003D /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E263FC24A4E8970023003D /* NetworkError.swift */; };
 		F3E263FF24A536C40023003D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E263FE24A536C40023003D /* HomeViewModel.swift */; };
+		F3E2640124A541650023003D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2640024A541650023003D /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,6 +183,7 @@
 		F3E263F924A4D1CF0023003D /* ReviewsFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewsFooter.xib; sourceTree = "<group>"; };
 		F3E263FC24A4E8970023003D /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		F3E263FE24A536C40023003D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F3E2640024A541650023003D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		F4CB37BEE3AFDFCE6DFABF27 /* Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig"; path = "Target Support Files/Pods-DesafioHotmart-DesafioHotmartUITests/Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -262,6 +264,7 @@
 				F36AB36B24A37BCD00F52A54 /* ReviewItem.swift */,
 				F3E263F824A4D1CF0023003D /* ReviewsFooter.swift */,
 				F3E263F924A4D1CF0023003D /* ReviewsFooter.xib */,
+				F3E2640024A541650023003D /* DetailViewModel.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -730,6 +733,7 @@
 				F3A5D7D4249D856C0044D6F1 /* HomeRoute.swift in Sources */,
 				F386EFF9249C261E00D4FE49 /* SceneDelegate.swift in Sources */,
 				F3E263F524A453560023003D /* TabBarController.swift in Sources */,
+				F3E2640124A541650023003D /* DetailViewModel.swift in Sources */,
 				F3A5D7C2249D6C010044D6F1 /* Extension.swift in Sources */,
 				F36AB36C24A37BCD00F52A54 /* ReviewItem.swift in Sources */,
 				F3A5D7CD249D7CFB0044D6F1 /* HomePresenter.swift in Sources */,
