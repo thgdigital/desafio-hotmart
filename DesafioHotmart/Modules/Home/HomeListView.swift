@@ -73,6 +73,22 @@ extension HomeListView {
 }
 
 extension HomeListView: HomePresenterView {
+    func loading() {
+        
+    }
+    
+    func stopLoading() {
+        
+    }
+    
+    func showAlertError(title: String, message: String) {
+        UIAlertController.showAlert(title: title, message: message,cancelButtonTitle: "Cancelar", confirmationButtonTitle: "Tentar novamente", viewController: self,
+                                dismissBlock: {
+            self.presenter.fetch()
+            
+        })
+    }
+    
     
     func update(items: [LocationItem]) {
         self.items = items

@@ -13,23 +13,32 @@ class LocationManager {
     
     @discardableResult
     private func performRequest(route: LocationsRoute, completion: @escaping (AFDataResponse<Any>) -> Void) -> DataRequest {
-        return AF.request(route).validate().responseJSON {response in
+        return AF.request(route).responseJSON {response in
             completion(response)
         }
     }
     
-    func fetch(completionHandler: @escaping  (Result<Locations, AFError>)-> Void) {
+    func fetch(completionHandler: @escaping  (Result<Locations, NetworkError>)-> Void) {
         performRequest(route: .getLocations) { response in
             switch response.result {
                 
             case .success:
                 
                 guard let data = response.data, let locations: Locations = self.decodeParse(jsonData: data) else {
+                    completionHandler(.failure(.jsonDecoding))
                     return
                 }
                 completionHandler(.success(locations))
             case .failure(let error):
-                print(error)
+                if let nsError = error.underlyingError as? NSError, nsError.code ==  NSURLErrorNotConnectedToInternet {
+                    completionHandler(.failure(.noConnection))
+                    
+    
+                    
+                }else{
+                    completionHandler(.failure(.http(statusCode: error._code, rawResponseData: response.data ?? Data())))
+                }
+                
             }
         }
     }
@@ -53,10 +62,11 @@ class LocationManager {
                         item.schedule = self.mappingSchedule(data: schedule)
                     }
                 }
+                //                completionHandler(.failure(AFError.))
                 completionHandler(.success(item))
                 
             case .failure(let error):
-                print(error)
+                print((error.underlyingError as? NSError)?.code == NSURLErrorNotConnectedToInternet)
             }
         }
         

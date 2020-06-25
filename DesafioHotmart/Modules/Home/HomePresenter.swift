@@ -9,8 +9,11 @@
 import Foundation
 
 protocol HomePresenterView: class {
+    func loading()
+    func stopLoading()
     func update(items: [LocationItem])
     func setupNavigationBar()
+    func showAlertError(title: String, message: String)
 }
 
 class HomePresenter: NSObject {
@@ -25,7 +28,10 @@ class HomePresenter: NSObject {
     }
     
     func viewDidLoad() {
-
+        fetch()
+    }
+    
+    func fetch() {
         manager.fetch { [weak self] result in
             guard let strongSelf = self else {
                 return
@@ -35,8 +41,21 @@ class HomePresenter: NSObject {
             case .success(let locations):
                 strongSelf.view?.update(items: locations.listLocations.enumerated().map({ LocationItem.mapping(model: $0.element, index: $0.offset)}))
             case .failure(let error):
-                print(error.errorDescription)
+                strongSelf.connectionFailure(with: error)
             }
+        }
+    }
+    
+    func connectionFailure(with error: NetworkError) {
+        var title = "Sem conexão"
+        switch error {
+        case .jsonDecoding, .unknown, .http:
+            title = "Error Serve"
+            self.view?.showAlertError(title: title, message: "Error no servidor por favor tente mais tarde")
+        case .timeout:
+            self.view?.showAlertError(title: title, message: "Verifique sua conexão com a internet e tente novamente")
+        case .noConnection:
+            self.view?.showAlertError(title: title, message: "Verifique sua conexão com a internet e tente novamente")
         }
     }
     
@@ -45,6 +64,6 @@ class HomePresenter: NSObject {
     }
     
     func updateView(){
-         view?.setupNavigationBar()
+        view?.setupNavigationBar()
     }
 }
