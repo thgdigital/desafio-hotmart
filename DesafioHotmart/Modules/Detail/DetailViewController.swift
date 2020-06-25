@@ -16,8 +16,12 @@ class DetailViewController: CollectionViewController {
         presenter.fetchLocation()
         if #available(iOS 11.0, *) {
             collectionView.contentInsetAdjustmentBehavior = .never
+        }else {
+           collectionView.contentInset.top = -64
         }
         collectionView.contentInset.bottom = 20
+        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset(horizontal: -1000.0, vertical: 0.0), for: .default)
+
     }
     
     override func viewWillAppear(_ animated: Bool) {

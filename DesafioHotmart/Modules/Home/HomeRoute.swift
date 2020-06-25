@@ -12,17 +12,21 @@ import CollectionViewWaterfallLayout
 
 class HomeRoute {
     weak var viewController: UIViewController?
-    func makeScreen() -> HomeListView {
+    func makeScreen() -> UINavigationController {
         let homelistView = HomeListView(collectionViewLayout: CollectionViewWaterfallLayout())
         homelistView.presenter = HomePresenter(manager: LocationManager(), with: homelistView, route: self)
         viewController = homelistView
-        return homelistView
+        let tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "homeOff"), selectedImage: #imageLiteral(resourceName: "homeOn"))
+        tabBarItem.imageInsets = UIEdgeInsets(top: 9, left: 0, bottom: -9, right: 0)
+        homelistView.tabBarItem = tabBarItem
+        let navigation = UINavigationController(rootViewController: homelistView)
+        let navigationBar  = navigation.navigationBar
+        navigationBar.tintColor = .white
+        return navigation
     }
     
     func showDetail(id: Int){
         let detail = DetailRouter().makeScreen(idLocation: id)
-//        detail.modalPresentationStyle = .fullScreen
         viewController?.navigationController?.pushViewController(detail, animated: true)
-//        viewController?.present(detail, animated: true, completion: nil)
     }
 }

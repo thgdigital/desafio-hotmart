@@ -73,6 +73,8 @@
 		F3A5D7E8249D8F290044D6F1 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3A5D7DE249D8F290044D6F1 /* OpenSans-Italic.ttf */; };
 		F3A5D7E9249D8F290044D6F1 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3A5D7DF249D8F290044D6F1 /* OpenSans-SemiBold.ttf */; };
 		F3A5D7EB249D8F370044D6F1 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5D7EA249D8F370044D6F1 /* Fonts.swift */; };
+		F3E263F524A453560023003D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E263F424A453560023003D /* TabBarController.swift */; };
+		F3E263F724A453880023003D /* TabBarRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E263F624A453880023003D /* TabBarRoute.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -170,6 +172,8 @@
 		F3A5D7DE249D8F290044D6F1 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
 		F3A5D7DF249D8F290044D6F1 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		F3A5D7EA249D8F370044D6F1 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		F3E263F424A453560023003D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F3E263F624A453880023003D /* TabBarRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRoute.swift; sourceTree = "<group>"; };
 		F4CB37BEE3AFDFCE6DFABF27 /* Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig"; path = "Target Support Files/Pods-DesafioHotmart-DesafioHotmartUITests/Pods-DesafioHotmart-DesafioHotmartUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -341,6 +345,7 @@
 		F3A5D7B9249D2F840044D6F1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F3E263F324A4531C0023003D /* TabBar */,
 				F32C60FD24A22F2B0031DD06 /* Detail */,
 				F3A5D7BA249D2F8E0044D6F1 /* Home */,
 			);
@@ -411,6 +416,15 @@
 				F3A5D7EA249D8F370044D6F1 /* Fonts.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F3E263F324A4531C0023003D /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F3E263F424A453560023003D /* TabBarController.swift */,
+				F3E263F624A453880023003D /* TabBarRoute.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -699,6 +713,7 @@
 				F386EFF7249C261E00D4FE49 /* AppDelegate.swift in Sources */,
 				F3A5D7D4249D856C0044D6F1 /* HomeRoute.swift in Sources */,
 				F386EFF9249C261E00D4FE49 /* SceneDelegate.swift in Sources */,
+				F3E263F524A453560023003D /* TabBarController.swift in Sources */,
 				F3A5D7C2249D6C010044D6F1 /* Extension.swift in Sources */,
 				F36AB36C24A37BCD00F52A54 /* ReviewItem.swift in Sources */,
 				F3A5D7CD249D7CFB0044D6F1 /* HomePresenter.swift in Sources */,
@@ -710,6 +725,7 @@
 				F3A5D7C7249D735D0044D6F1 /* LocationModel.swift in Sources */,
 				F3A5D7C4249D71420044D6F1 /* LocationItem.swift in Sources */,
 				F36AB35124A26ABB00F52A54 /* BoxCell.swift in Sources */,
+				F3E263F724A453880023003D /* TabBarRoute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

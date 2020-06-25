@@ -21,7 +21,7 @@ class HomeListView: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.backgroundColor = .white
-        title = "Home"
+        navigationItem.title = "Home"
         
         let nibName = UINib(nibName: "LocationCell", bundle: nil)
         collectionView.register(nibName, forCellWithReuseIdentifier: LocationCell.identifier)
