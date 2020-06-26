@@ -14,9 +14,10 @@ class HomeTests: XCTestCase {
     var view: HomeListView!
     
     override func tearDown() {
+        super.tearDown()
         presenter = nil
         view = nil
-        super.tearDown()
+       
     }
     override func setUp() {
         super.setUp()
@@ -28,7 +29,6 @@ class HomeTests: XCTestCase {
     
     
     func testLoadata() throws {
-        
         XCTAssertEqual(view.items.count, 0)
         presenter.fetch()
         let exp = expectation(description: "Test after 5 seconds")

@@ -20,6 +20,19 @@ class ManagerMock: LocationManager {
     }
     
     override func findLocation(id: Int, completionHandler: @escaping (Result<DetailItem, NetworkError>) -> Void) {
-        
+        var item = DetailItem()
+        if let location: DetailModel<Schedule> = Loader.mock(file: "DetailModel") {
+            item = self.mappingLocationDetail(location: location)
+            item.schedule = self.mappingSchedule(data: location.schedule)
+            completionHandler(.success(item))
+        } else if let location: DetailModel<[Schedule]> = Loader.mock(file: "DetailModel") {
+            item = self.mappingLocationDetail(location: location)
+            if let schedule = location.schedule.first {
+                item.schedule = self.mappingSchedule(data: schedule)
+            }
+            completionHandler(.success(item))
+        } else {
+            completionHandler(.failure(.jsonDecoding))
+        }
     }
 }

@@ -46,6 +46,9 @@
 		F386F003249C262400D4FE49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F386F001249C262400D4FE49 /* LaunchScreen.storyboard */; };
 		F386F00E249C262400D4FE49 /* DesafioHotmartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386F00D249C262400D4FE49 /* DesafioHotmartTests.swift */; };
 		F386F019249C262400D4FE49 /* DesafioHotmartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386F018249C262400D4FE49 /* DesafioHotmartUITests.swift */; };
+		F39C25F924A5AB0E009DA826 /* DetailTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39C25F824A5AB0E009DA826 /* DetailTest.swift */; };
+		F39C25FB24A5ABA8009DA826 /* DetailViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39C25FA24A5ABA8009DA826 /* DetailViewControllerBuilder.swift */; };
+		F39C25FD24A5B094009DA826 /* DetailModel.json in Resources */ = {isa = PBXBuildFile; fileRef = F39C25FC24A5B093009DA826 /* DetailModel.json */; };
 		F3A5D7A4249D044A0044D6F1 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5D7A3249D044A0044D6F1 /* PinterestLayout.swift */; };
 		F3A5D7AE249D2E340044D6F1 /* CollectionViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3A5D7A6249D2E340044D6F1 /* CollectionViewHeader.xib */; };
 		F3A5D7AF249D2E340044D6F1 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A5D7A7249D2E340044D6F1 /* CollectionViewController.swift */; };
@@ -154,6 +157,9 @@
 		F386F014249C262400D4FE49 /* DesafioHotmartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioHotmartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F386F018249C262400D4FE49 /* DesafioHotmartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioHotmartUITests.swift; sourceTree = "<group>"; };
 		F386F01A249C262400D4FE49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F39C25F824A5AB0E009DA826 /* DetailTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTest.swift; sourceTree = "<group>"; };
+		F39C25FA24A5ABA8009DA826 /* DetailViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerBuilder.swift; sourceTree = "<group>"; };
+		F39C25FC24A5B093009DA826 /* DetailModel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DetailModel.json; sourceTree = "<group>"; };
 		F3A5D7A3249D044A0044D6F1 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
 		F3A5D7A6249D2E340044D6F1 /* CollectionViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewHeader.xib; sourceTree = "<group>"; };
 		F3A5D7A7249D2E340044D6F1 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -314,6 +320,7 @@
 		F386F00C249C262400D4FE49 /* DesafioHotmartTests */ = {
 			isa = PBXGroup;
 			children = (
+				F39C25F724A5AAD7009DA826 /* Detail */,
 				F33CD30424A551AB003DBF11 /* Home */,
 				F386F00F249C262400D4FE49 /* Info.plist */,
 				F33CD30024A54EEF003DBF11 /* ManagerMock.swift */,
@@ -329,6 +336,16 @@
 				F386F01A249C262400D4FE49 /* Info.plist */,
 			);
 			path = DesafioHotmartUITests;
+			sourceTree = "<group>";
+		};
+		F39C25F724A5AAD7009DA826 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F39C25F824A5AB0E009DA826 /* DetailTest.swift */,
+				F39C25FA24A5ABA8009DA826 /* DetailViewControllerBuilder.swift */,
+				F39C25FC24A5B093009DA826 /* DetailModel.json */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		F3A5D7A5249D2DF10044D6F1 /* CollectionView */ = {
@@ -690,6 +707,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F39C25FD24A5B094009DA826 /* DetailModel.json in Resources */,
 				F32E2DF724A5599E006F0E5E /* Locations.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -863,7 +881,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F386F00E249C262400D4FE49 /* DesafioHotmartTests.swift in Sources */,
+				F39C25FB24A5ABA8009DA826 /* DetailViewControllerBuilder.swift in Sources */,
 				F33CD30124A54EEF003DBF11 /* ManagerMock.swift in Sources */,
+				F39C25F924A5AB0E009DA826 /* DetailTest.swift in Sources */,
 				F32E2DF524A556D4006F0E5E /* HomeViewBuilder.swift in Sources */,
 				F32E2DF924A55A2E006F0E5E /* Loader.swift in Sources */,
 			);
