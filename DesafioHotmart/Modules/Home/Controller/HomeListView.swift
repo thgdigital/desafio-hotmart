@@ -14,7 +14,7 @@ class HomeListView: UICollectionViewController {
     var presenter: HomePresenter!
     var viewModel: HomeViewModel!{
         didSet{
-            collectionView.reloadEmptyDataSet()
+//            collectionView.reloadData()
         }
     }
     

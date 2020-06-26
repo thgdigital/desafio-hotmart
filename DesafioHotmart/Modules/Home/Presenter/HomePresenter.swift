@@ -15,7 +15,7 @@ protocol HomePresenterView: class {
 }
 
 class HomePresenter: NSObject {
-    fileprivate var manager: LocationManager
+    var manager: LocationManager
     weak var view: HomePresenterView?
     var route: HomeRoute
     var viewModel: HomeViewModel
@@ -29,16 +29,6 @@ class HomePresenter: NSObject {
     
     func viewDidLoad() {
         fetch()
-    }
-    var imageAnimation: CAAnimation? {
-        let animation = CABasicAnimation.init(keyPath: "transform")
-        animation.fromValue = NSValue.init(caTransform3D: CATransform3DIdentity)
-        animation.toValue = NSValue.init(caTransform3D: CATransform3DMakeRotation(.pi/2, 0.0, 0.0, 1.0))
-        animation.duration = 0.25
-        animation.isCumulative = true
-        animation.repeatCount = MAXFLOAT
-        
-        return animation;
     }
     
     func fetch() {
@@ -54,6 +44,9 @@ class HomePresenter: NSObject {
             switch result {
                 
             case .success(let locations):
+                strongSelf.viewModel.isLoading = false
+                strongSelf.viewModel.title = ""
+                strongSelf.viewModel.message = ""
                 strongSelf.view?.update(items: locations.listLocations.enumerated().map({ LocationItem.mapping(model: $0.element, index: $0.offset)}))
             case .failure(let error):
                 strongSelf.connectionFailure(with: error)
@@ -64,14 +57,14 @@ class HomePresenter: NSObject {
     func connectionFailure(with error: NetworkError) {
         switch error {
         case .jsonDecoding, .unknown, .http:
-            viewModel.imageEmpty = #imageLiteral(resourceName: "icoCloud")
-            viewModel.title = "Error Serve"
-            viewModel.message = "Error no servidor por favor tente mais tarde"
+            self.viewModel.imageEmpty = #imageLiteral(resourceName: "icoCloud")
+            self.viewModel.title = "Error Serve"
+            self.viewModel.message = "Error no servidor por favor tente mais tarde"
         case .timeout, .noConnection:
-            viewModel.title = "Falha conexão"
-            viewModel.imageEmpty = #imageLiteral(resourceName: "icoWifi")
-            viewModel.message = "Verifique sua conexão com a internet e tente novamente"
-            viewModel.isLoading = false
+            self.viewModel.title = "Falha conexão"
+            self.viewModel.imageEmpty = #imageLiteral(resourceName: "icoWifi")
+            self.viewModel.message = "Verifique sua conexão com a internet e tente novamente"
+            self.viewModel.isLoading = false
         }
         viewModel.titleButton = "Tentar Novamente"
         view?.updateCollection(viewModel: viewModel)

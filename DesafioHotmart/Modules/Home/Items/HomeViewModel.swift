@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct HomeViewModel {
+class HomeViewModel {
     var title: String
     var message: String
     var imageEmpty: UIImage
@@ -23,6 +23,14 @@ struct HomeViewModel {
         animation.repeatCount = MAXFLOAT
         
         return animation
+    }
+    
+     init(title: String, message: String, imageEmpty: UIImage, isLoading: Bool, titleButton: String) {
+        self.title = title
+        self.message = message
+        self.imageEmpty = imageEmpty
+        self.isLoading = isLoading
+        self.titleButton = titleButton
     }
 }
 
