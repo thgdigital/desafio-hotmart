@@ -14,8 +14,11 @@ class HomeListView: UICollectionViewController {
     var presenter: HomePresenter!
     var viewModel: HomeViewModel!{
         didSet{
-//            collectionView.reloadData()
+            collectionView.reloadData()
         }
+    }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     var items: [LocationItem] = [LocationItem](){
@@ -43,7 +46,7 @@ class HomeListView: UICollectionViewController {
         collectionView.collectionViewLayout = layout
         
         presenter.viewDidLoad()
-        
+        navigationController?.navigationBar.barStyle = .blackTranslucent
         collectionView.emptyDataSetView {[weak self] view in
             if let `self` = self {
                 view.image(self.viewModel.imageEmpty)
@@ -59,9 +62,7 @@ class HomeListView: UICollectionViewController {
         presenter.updateView()
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        .lightContent
-    }
+
     
 }
 // MARK: - UICollectionViewDataSource

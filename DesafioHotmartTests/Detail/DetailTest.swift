@@ -14,16 +14,18 @@ class DetailTest: XCTestCase {
     var view: DetailViewController!
     
     override func tearDown() {
-        super.tearDown()
+        
         presenter = nil
         view = nil
+        super.tearDown()
         
     }
     override func setUp() {
-        super.setUp()
+       
         view = DetailViewControllerBuilder.makeScreen()
         presenter = DetailPresenter(idLocation: 1, manager: ManagerMock(), view: view)
         view.presenter = presenter
+         super.setUp()
     }
     
     func testDataInfos() {
@@ -49,6 +51,7 @@ class DetailTest: XCTestCase {
     
     func testData() {
         presenter.fetchLocation()
+        XCTAssertEqual(presenter.viewModel.title, "carregando..")
         let exp = expectation(description: "Test after 5 seconds")
         let result = XCTWaiter.wait(for: [exp], timeout: 5.0)
         if result == XCTWaiter.Result.timedOut {
